@@ -1,0 +1,23 @@
+{
+  "name": "hexo-theme-shrimply-solitude",
+  "version": "1.0.0",
+  "description": "A minimal, fast personal blog theme for Hexo.",
+  "main": "package.json",
+  "keywords": [
+    "hexo",
+    "theme",
+    "shrimply",
+    "blog",
+    "minimal"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daxialaila-cell/Shrimply-blogging"
+  },
+  "bugs": {
+    "url": "https://github.com/daxialaila-cell/Shrimply-blogging/issues"
+  },
+  "homepage": "https://github.com/daxialaila-cell/Shrimply-blogging",
+  "author": "daxialaila-cell",
+  "license": "Apache-2.0"
+}

@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 我的博客
-subtitle: '记录思考，分享生活'
-description: '一个简约的个人博客'
-keywords: [博客, 个人博客, 技术博客]
-author: xfxe
+title: 大虾来了
+subtitle: '记录与表达'
+description: '大虾来了的个人博客，分享技术、创作经验与生活思考'
+keywords: [博客, 个人博客, 技术博客, AI]
+author: 大虾来了
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
@@ -96,7 +96,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: shrimply
+theme: shrimply-solitude
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

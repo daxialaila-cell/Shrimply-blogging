@@ -1,0 +1,244 @@
+# ---------------------------
+# Shrimply Blogging - Solitude Theme Config
+# 仿 laogou717.com 风格
+# ---------------------------
+
+### Site information
+site:
+  name:
+    class: text
+    custom: 大虾来了
+  icon: /img/shrimply.png
+
+### Navigation bar
+nav:
+  menu:
+    首页: /
+    文章:
+      归档: /archives/ || fas fa-folder-closed
+      分类: /categories/ || fas fa-clone
+      标签: /tags/ || fas fa-tags
+    关于: /about/ || fas fa-user
+
+  right:
+    random: true
+
+### Home Top Banner
+hometop:
+  enable: true
+  banner:
+    title: 打破信息差<br>记录与表达
+    desc:
+      - 一个喜欢折腾的开发者
+      - 保持简单，保持专注
+  group:
+    技术: /tags/技术/ || fas fa-code || linear-gradient(to right, #425AEF, #3f8cff)
+    生活: /tags/生活/ || fas fa-leaf || linear-gradient(to right, #11998e, #38ef7d)
+    AI: /tags/AI/ || fas fa-robot || linear-gradient(to right, #667eea, #764ba2)
+  recommendList:
+    enable: false
+
+### Aside
+aside:
+  home:
+    noSticky: "about"
+    Sticky: "allInfo"
+  post:
+    noSticky: "about"
+    Sticky: "newestPost"
+  page:
+    noSticky: "about"
+    Sticky: "newestPost,allInfo"
+  position: 1
+
+  my_card:
+    author:
+      img: /img/shrimply.png
+    description: 大虾来了
+    content: 一个喜欢折腾的开发者
+    state:
+      morning: ✨ 早上好，新的一天开始了
+      noon: 🍲 中午好，该吃饭了
+      afternoon: 🌞 下午好，继续加油
+      night: 🌙 夜深了，早点休息
+      goodnight: 😴 晚安好梦
+    witty_words:
+      - 你可以的
+      - 保持专注
+      - 做好每一件小事
+
+  toc:
+    post: true
+    page: false
+    vague: true
+
+  tags:
+    enable: true
+    limit: 20
+
+  siteinfo:
+    postcount: true
+    wordcount: true
+    pv: true
+    uv: true
+    updatetime: true
+    runtimeenable: true
+    runtime: "2026-06-01 00:00:00"
+
+### Page default settings
+page:
+  error: true
+  tags: true
+  categories: true
+  default:
+    cover:
+      - /img/default.png
+
+### Post default settings
+post:
+  default:
+    locate: China
+    copyright:
+      enable: false
+  ai:
+    enable: false
+  meta:
+    date: true
+    updated: true
+    locate: false
+    wordcount: true
+    readtime: true
+    pv: true
+    comment: false
+  award:
+    enable: false
+  share:
+    enable: false
+  footer:
+    enable: false
+  rss: /atom.xml
+
+### Theme Color (仿 Apple 蓝)
+theme_color:
+  dark: "#ffc848"
+  light: "#425AEF"
+
+### Display mode
+display_mode:
+  type: auto
+  universe: false
+
+### Font
+font:
+  font-size: 15px
+  code-font-size: 14px
+  font-family: "-apple-system, BlinkMacSystemFont, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif"
+  code-font-family: '"Source Code Pro", "monospace", monospace'
+
+### Home page article list
+index_post_list:
+  direction: column
+  column: 2
+
+### Related articles (disabled for now)
+related_post:
+  enable: false
+
+### Right menu
+right_menu:
+  enable: false
+
+### Console
+console:
+  enable: true
+  recentComment:
+    enable: false
+  card:
+    tags: true
+    archive: "month"
+
+### Translate
+translate:
+  enable: true
+  defaultEncoding: 2
+  translateDelay: 0
+
+### Right sidebar
+rightside:
+  enable: true
+  percent: true
+  hide:
+    enable: true
+    translate: true
+    mode: true
+    aside: true
+
+### Footer
+footer:
+  information:
+    author: false
+    left:
+      GitHub: https://github.com/daxialaila-cell || fab fa-github
+    right:
+  group:
+  randomlink: false
+  links:
+    - name: RSS
+      url: /atom.xml
+
+### 404 page
+errorpage:
+  img: /img/404.avif
+  text: =awa= 页面找不到了
+
+### Loading
+loading:
+  fullpage: true
+  favicon: /img/shrimply.png
+  pace: true
+
+### Highlight
+highlight:
+  enable: true
+  limit: 200
+  copy: true
+  expand: true
+  theme: mac
+  color: default
+
+### Image lightbox
+lightbox: false
+fancybox: false
+mediumZoom: false
+
+### Word count
+wordcount: true
+
+### Search
+search:
+  enable: true
+  type: local
+  local:
+    preload: false
+
+### Lazyload
+lazyload:
+  enable: true
+  field: site
+  placeholder: ""
+  errorimg: /img/error_load.avif
+
+### Lure (disabled)
+lure:
+  enable: false
+
+### Article expiration
+expire:
+  enable: false
+
+### CDN
+CDN:
+  internal: local
+  third_party: custom
+  version: true
+  custom_format: https://cdn.jsdelivr.net/npm/${name}@${version}/${min_file}
