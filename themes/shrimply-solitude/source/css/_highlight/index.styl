@@ -10,23 +10,23 @@ if $prismjs_enable
 
 figure
   &:hover
-    box-shadow var(--efu-shadow-border-hover)
+    box-shadow var(--sb-shadow-border-hover)
 
   .copy-btn
     position absolute
     top 1rem
     right 1rem
     z-index 10
-    color var(--efu-fontcolor)
+    color var(--sb-fontcolor)
     cursor pointer
     transition all .2s ease 0s
 
     &:hover
-      color var(--efu-lighttext)
+      color var(--sb-lighttext)
 
   &.highlight
-    background-color var(--efu-hl-bg)
-    color var(--efu-fontcolor)
+    background-color var(--sb-hl-bg)
+    color var(--sb-fontcolor)
     border var(--style-border-always)
     overflow hidden
     border-radius 8px 8px 4px 4px
@@ -45,9 +45,9 @@ figure
       border-radius 8px 8px 0 0
       height 2.15em
       font-size 16px
-      background var(--efu-hltools-bg)
+      background var(--sb-hltools-bg)
       border-bottom var(--style-border-always)
-      color var(--efu-fontcolor)
+      color var(--sb-fontcolor)
 
       &.closed
         .expand
@@ -63,7 +63,7 @@ figure
         font-size 18px
 
       .copy-button:hover
-        color var(--efu-main)
+        color var(--sb-main)
 
       .expand
         position absolute
@@ -82,13 +82,13 @@ figure
         position absolute
         right 3.5rem
         font-size 14px
-        color var(--efu-secondtext)
+        color var(--sb-secondtext)
 
         +maxWidth768()
           display none
 
     .code-expand-btn
-      background var(--efu-hltools-bg)
+      background var(--sb-hltools-bg)
       transition .3s
       backdrop-filter saturate(180%) blur(20px)
       transform translateZ(0)
@@ -106,15 +106,15 @@ figure
       height 32px
 
       i
-        color var(--efu-fontcolor)
+        color var(--sb-fontcolor)
         line-height 1
         animation 1.2s ease 0s infinite normal none running code-expand-key
 
       &:hover
-        background var(--efu-main)
+        background var(--sb-main)
 
         i
-          color var(--efu-white)
+          color var(--sb-white)
 
       &.expand-done
         display none

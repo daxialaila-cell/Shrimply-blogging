@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="300" viewBox="0 0 700 300">
+  <rect width="700" height="300" rx="12" fill="#fafafa"/>
+  <text x="350" y="30" text-anchor="middle" fill="#333" font-size="15" font-family="sans-serif" font-weight="bold">远程工作者的一天</text>
+  <line x1="80" y1="50" x2="80" y2="270" stroke="#f5576c" stroke-width="2" stroke-dasharray="5 3"/>
+  <circle cx="80" cy="65" r="7" fill="#f093fb"/>
+  <rect x="100" y="48" width="210" height="30" rx="6" fill="#fce4ec"/>
+  <text x="108" y="68" fill="#c2185b" font-size="12" font-family="sans-serif">07:30  起床 + 晨间运动</text>
+  <circle cx="80" cy="110" r="7" fill="#f5576c"/>
+  <rect x="100" y="93" width="210" height="30" rx="6" fill="#fce4ec"/>
+  <text x="108" y="113" fill="#c2185b" font-size="12" font-family="sans-serif">08:30  早餐 + 浏览资讯</text>
+  <circle cx="80" cy="155" r="7" fill="#e91e63"/>
+  <rect x="100" y="135" width="280" height="36" rx="6" fill="#ffebee"/>
+  <text x="108" y="150" fill="#880e4f" font-size="12" font-family="sans-serif">09:00  深度工作（最重要的 3 件事）</text>
+  <text x="108" y="165" fill="#999" font-size="11" font-family="sans-serif">关闭通知、番茄工作法、单任务专注</text>
+  <circle cx="80" cy="200" r="7" fill="#ad1457"/>
+  <rect x="100" y="183" width="210" height="30" rx="6" fill="#ffebee"/>
+  <text x="108" y="203" fill="#880e4f" font-size="12" font-family="sans-serif">12:00  午餐 + 午休</text>
+  <circle cx="80" cy="240" r="7" fill="#880e4f"/>
+  <rect x="100" y="223" width="280" height="30" rx="6" fill="#fce4ec"/>
+  <text x="108" y="243" fill="#c2185b" font-size="12" font-family="sans-serif">14:00  协作沟通 + 会议</text>
+  <circle cx="80" cy="278" r="7" fill="#4a148c"/>
+  <rect x="100" y="261" width="280" height="30" rx="6" fill="#fce4ec"/>
+  <text x="108" y="281" fill="#c2185b" font-size="12" font-family="sans-serif">16:00  次要工作 + 整理归档</text>
+  <text x="420" y="68" fill="#333" font-size="13" font-family="sans-serif" font-weight="bold">核心技巧</text>
+  <rect x="420" y="80" width="260" height="22" rx="4" fill="#f3e5f5"/>
+  <text x="430" y="96" fill="#6a1b9a" font-size="11" font-family="sans-serif">物理分区：办公区不等于休息区</text>
+  <rect x="420" y="108" width="260" height="22" rx="4" fill="#f3e5f5"/>
+  <text x="430" y="124" fill="#6a1b9a" font-size="11" font-family="sans-serif">固定 Routine：习惯大于意志力</text>
+  <rect x="420" y="136" width="260" height="22" rx="4" fill="#f3e5f5"/>
+  <text x="430" y="152" fill="#6a1b9a" font-size="11" font-family="sans-serif">异步沟通：文档先行，减少即时通讯</text>
+  <text x="420" y="185" fill="#333" font-size="13" font-family="sans-serif" font-weight="bold">收益</text>
+  <rect x="420" y="197" width="260" height="22" rx="4" fill="#e8f5e9"/>
+  <text x="430" y="213" fill="#2e7d32" font-size="11" font-family="sans-serif">深度工作时间翻倍</text>
+  <rect x="420" y="225" width="260" height="22" rx="4" fill="#e8f5e9"/>
+  <text x="430" y="241" fill="#2e7d32" font-size="11" font-family="sans-serif">通勤时间归零</text>
+  <rect x="420" y="253" width="260" height="22" rx="4" fill="#e8f5e9"/>
+  <text x="430" y="269" fill="#2e7d32" font-size="11" font-family="sans-serif">可自由选择最高效的时间段工作</text>
+</svg>

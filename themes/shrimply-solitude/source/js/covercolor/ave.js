@@ -42,7 +42,7 @@ const setThemeColors = (value) => {
         none: `${value}00`
     };
     Object.entries(themeColors).forEach(([key, color]) => {
-        document.documentElement.style.setProperty(`--efu-${key}`, color);
+        document.documentElement.style.setProperty(`--sb-${key}`, color);
     });
     adjustBrightness(r, g, b);
     document.getElementById("coverdiv").classList.add("loaded");
@@ -50,9 +50,9 @@ const setThemeColors = (value) => {
 }
 
 const setDefaultThemeColors = () => {
-    const vars = ['--efu-theme', '--efu-theme-op', '--efu-theme-op-deep', '--efu-theme-none'];
+    const vars = ['--sb-theme', '--sb-theme-op', '--sb-theme-op-deep', '--sb-theme-none'];
     vars.forEach((varName, i) => {
-        document.documentElement.style.setProperty(['--efu-main', '--efu-main-op', '--efu-main-op-deep', '--efu-main-none'][i], `var(${varName})`);
+        document.documentElement.style.setProperty(['--sb-main', '--sb-main-op', '--sb-main-op-deep', '--sb-main-none'][i], `var(${varName})`);
     });
     initThemeColor();
 }
@@ -67,11 +67,11 @@ const adjustBrightness = (r, g, b) => {
     const brightness = Math.round(((r * 299) + (g * 587) + (b * 114)) / 1000);
     if (brightness < 125) {
         document.querySelectorAll('.card-content').forEach(item => {
-            item.style.setProperty('--efu-card-bg', 'var(--efu-white)');
+            item.style.setProperty('--sb-card-bg', 'var(--sb-white)');
         });
         document.querySelectorAll('.sayhi').forEach(item => {
-            item.style.setProperty('background', 'var(--efu-white-op)');
-            item.style.setProperty('color', 'var(--efu-white)');
+            item.style.setProperty('background', 'var(--sb-white-op)');
+            item.style.setProperty('color', 'var(--sb-white)');
         });
     }
 }

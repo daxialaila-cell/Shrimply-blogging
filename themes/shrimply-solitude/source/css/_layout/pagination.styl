@@ -22,9 +22,9 @@
         margin .2rem 0 1rem 0
         border-radius 12px
         line-height 2.5rem
-        background var(--efu-card-bg)
+        background var(--sb-card-bg)
         border var(--style-border-always)
-        box-shadow var(--efu-shadow-border)
+        box-shadow var(--sb-shadow-border)
 
       i
         +maxWidth768()
@@ -43,35 +43,35 @@
 
     +minWidth768()
       width 2rem
-      background var(--efu-card-bg)
+      background var(--sb-card-bg)
       height 2rem
       line-height calc(2rem - 2px)
       border-radius 8px
       margin 0 .3rem
-      box-shadow var(--efu-shadow-border)
+      box-shadow var(--sb-shadow-border)
       border var(--style-border)
       transition .3s
       &:hover
-        color var(--efu-theme)
+        color var(--sb-theme)
         border var(--style-border-hover)
-        box-shadow var(--efu-shadow-main)
+        box-shadow var(--sb-shadow-main)
     +maxWidth768()
       display none
 
     &.current
-      background var(--efu-theme)
-      color var(--efu-white)
+      background var(--sb-theme)
+      color var(--sb-white)
       border-radius 5px
 
       +minWidth768()
-        background var(--efu-theme)
+        background var(--sb-theme)
         border var(--style-border-hover)
-        box-shadow var(--efu-shadow-theme)
+        box-shadow var(--sb-shadow-theme)
 
         &:hover
-          background var(--efu-theme)
-          box-shadow var(--efu-shadow-theme)
-          color var(--efu-white)
+          background var(--sb-theme)
+          box-shadow var(--sb-shadow-theme)
+          color var(--sb-white)
 
   a.extend.next, a.extend.prev
     +minWidth768()
@@ -79,8 +79,8 @@
       height 2rem
       line-height 1.9rem
       border-radius 8px
-      background var(--efu-card-bg)
-      box-shadow var(--efu-shadow-border)
+      background var(--sb-card-bg)
+      box-shadow var(--sb-shadow-border)
       position absolute
       border var(--style-border)
       display flex
@@ -94,9 +94,9 @@
 
   a.extend
     &:hover
-      color var(--efu-theme)
+      color var(--sb-theme)
       border var(--style-border-hover)
-      box-shadow var(--efu-shadow-main)
+      box-shadow var(--sb-shadow-main)
 
     &.next
       right 0
@@ -144,7 +144,7 @@
       justify-content center
       align-items center
       transition .3s
-      background var(--efu-card-bg)
+      background var(--sb-card-bg)
       border var(--style-border-always)
       cursor text
       pointer-events none
@@ -154,8 +154,8 @@
       height 30px
       right 4px
       top 5px
-      background var(--efu-card-bg)
-      border 1px solid var(--efu-none)
+      background var(--sb-card-bg)
+      border 1px solid var(--sb-none)
       border-radius 4px
       opacity .2
 
@@ -168,8 +168,8 @@
       outline-style none
       font-size 16px
       padding-left 12px
-      background var(--efu-secondbg)
-      color var(--efu-fontcolor)
+      background var(--sb-secondbg)
+      color var(--sb-fontcolor)
 
       &:focus, /#pagination .toPageGroup:hover input
         border var(--style-border-hover-always)

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="240" viewBox="0 0 700 240">
+  <rect width="700" height="240" rx="12" fill="#fafffe"/>
+  <defs><filter id="s3"><feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/></filter></defs>
+  <!-- Card 1: Subtraction -->
+  <rect x="25" y="30" width="200" height="155" rx="10" fill="white" stroke="#e0e0e0" filter="url(#s3)"/>
+  <circle cx="125" cy="60" r="20" fill="#11998e" opacity="0.1"/>
+  <text x="125" y="67" text-anchor="middle" fill="#11998e" font-size="20">-</text>
+  <text x="125" y="95" text-anchor="middle" fill="#333" font-size="15" font-family="sans-serif" font-weight="bold">减法是加法</text>
+  <text x="125" y="118" text-anchor="middle" fill="#777" font-size="12" font-family="sans-serif">移除不必要的装饰</text>
+  <text x="125" y="138" text-anchor="middle" fill="#777" font-size="12" font-family="sans-serif">让内容成为主角</text>
+  <text x="125" y="168" text-anchor="middle" fill="#11998e" font-size="12" font-family="sans-serif">Less is more</text>
+  <!-- Card 2: Spacing -->
+  <rect x="250" y="30" width="200" height="155" rx="10" fill="white" stroke="#e0e0e0" filter="url(#s3)"/>
+  <circle cx="350" cy="60" r="20" fill="#38ef7d" opacity="0.1"/>
+  <text x="350" y="67" text-anchor="middle" fill="#38ef7d" font-size="20">↔</text>
+  <text x="350" y="95" text-anchor="middle" fill="#333" font-size="15" font-family="sans-serif" font-weight="bold">间距即语言</text>
+  <text x="350" y="118" text-anchor="middle" fill="#777" font-size="12" font-family="sans-serif">留白创造呼吸感</text>
+  <text x="350" y="138" text-anchor="middle" fill="#777" font-size="12" font-family="sans-serif">4px/8px 倍数体系</text>
+  <text x="350" y="168" text-anchor="middle" fill="#38ef7d" font-size="12" font-family="sans-serif">Space speaks</text>
+  <!-- Card 3: Content-first -->
+  <rect x="475" y="30" width="200" height="155" rx="10" fill="white" stroke="#e0e0e0" filter="url(#s3)"/>
+  <circle cx="575" cy="60" r="20" fill="#00bcd4" opacity="0.1"/>
+  <text x="575" y="67" text-anchor="middle" fill="#00bcd4" font-size="20">T</text>
+  <text x="575" y="95" text-anchor="middle" fill="#333" font-size="15" font-family="sans-serif" font-weight="bold">内容驱动设计</text>
+  <text x="575" y="118" text-anchor="middle" fill="#777" font-size="12" font-family="sans-serif">先想清楚要表达什么</text>
+  <text x="575" y="138" text-anchor="middle" fill="#777" font-size="12" font-family="sans-serif">再决定怎么呈现</text>
+  <text x="575" y="168" text-anchor="middle" fill="#00bcd4" font-size="12" font-family="sans-serif">Content first</text>
+  <!-- Bottom quote -->
+  <text x="350" y="222" text-anchor="middle" fill="#aaa" font-size="12" font-family="sans-serif" font-style="italic">Simplicity is the ultimate sophistication — Leonardo da Vinci</text>
+</svg>

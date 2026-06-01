@@ -1,6 +1,6 @@
 if hexo-config('brevity.home_mini')
   #bbTimeList
-    background var(--efu-card-bg)
+    background var(--sb-card-bg)
     border-radius 12px
     display flex
     white-space nowrap
@@ -22,11 +22,11 @@ if hexo-config('brevity.home_mini')
     +minWidth1300()
       &:hover
         border var(--style-border-hover)
-        box-shadow var(--efu-shadow-main)
+        box-shadow var(--sb-shadow-main)
 
     +maxWidth768()
       margin 0
-      background var(--efu-background)
+      background var(--sb-background)
       border none
       padding 0 .2rem
 
@@ -37,7 +37,7 @@ if hexo-config('brevity.home_mini')
 
     &:hover
       opacity .8
-      color var(--efu-theme)
+      color var(--sb-theme)
 
   i.bber-logo
     font-size 1.2rem
@@ -73,7 +73,7 @@ if hexo-config('brevity.enable')
           margin-left 10px
 
           span.bber_nick
-            color var(--efu-main)
+            color var(--sb-main)
             font-size .9rem
 
           time.bber_date
@@ -110,9 +110,9 @@ if hexo-config('brevity.enable')
 
         .bber-info-time, .bber-info-location
           margin-right .5rem
-          color var(--efu-fontcolor)
+          color var(--sb-fontcolor)
           font-size .7rem
-          background-color var(--efu-gray-op)
+          background-color var(--sb-gray-op)
           padding 0 8px
           border-radius 20px
           cursor default
@@ -125,7 +125,7 @@ if hexo-config('brevity.enable')
 
           .datafrom
             order 2
-            color var(--efu-secondtext)
+            color var(--sb-secondtext)
             font-size .7rem
             margin-left 8px
 
@@ -135,7 +135,7 @@ if hexo-config('brevity.enable')
         .bber-content-link
           display flex
           margin-right .5rem
-          color var(--efu-secondtext)
+          color var(--sb-secondtext)
           font-size .7rem
           align-items center
           background-color rgba(245, 108, 108, .13)
@@ -143,15 +143,15 @@ if hexo-config('brevity.enable')
           border-radius 20px
 
           &:hover
-            background-color var(--efu-main)
-            color var(--efu-white)
+            background-color var(--sb-main)
+            color var(--sb-white)
 
           i
             margin-right 3px
             font-size 16px
 
     .count
-      color var(--efu-secondtext)
+      color var(--sb-secondtext)
       font-size .8rem
 
     p
@@ -169,7 +169,7 @@ if hexo-config('brevity.enable')
         border-radius 8px
         overflow hidden
         border var(--style-border-always)
-        background var(--efu-secondbg)
+        background var(--sb-secondbg)
 
         .aplayer-lrc
           display none
@@ -178,7 +178,7 @@ if hexo-config('brevity.enable')
         margin 0
 
         .aplayer-body
-          background-color var(--efu-card-bg)
+          background-color var(--sb-card-bg)
 
         .aplayer-info
           .aplayer-music
@@ -188,7 +188,7 @@ if hexo-config('brevity.enable')
               font-size .8rem
               font-weight 700
               margin 0
-              color var(--efu-fontcolor)
+              color var(--sb-fontcolor)
 
           .aplayer-controller
             align-items center
@@ -197,7 +197,7 @@ if hexo-config('brevity.enable')
               padding 0
 
               .aplayer-bar
-                background var(--efu-gray)
+                background var(--sb-gray)
                 height 8px
                 border-radius 12px
                 transition .3s
@@ -257,7 +257,7 @@ if hexo-config('brevity.enable')
         order 0
         font-size .8rem
         font-weight 700
-        color var(--efu-fontcolor)
+        color var(--sb-fontcolor)
         width 100%
         line-height 1.38
         border-radius 12px
@@ -281,10 +281,10 @@ if hexo-config('brevity.enable')
             flex-wrap nowrap
             justify-content space-between
             align-items flex-start
-            background var(--efu-card-bg)
+            background var(--sb-card-bg)
             margin-right .5rem
             margin-bottom .5rem
-            box-shadow var(--efu-shadow-border)
+            box-shadow var(--sb-shadow-border)
 
             +maxWidth1300()
               width 49.5%
@@ -299,7 +299,7 @@ if hexo-config('brevity.enable')
               display flex
               position relative
               margin 8px 0
-              border 1px dashed var(--efu-theme-op)
+              border 1px dashed var(--sb-theme-op)
               width 100%
 
             &:hover
@@ -334,7 +334,7 @@ if hexo-config('brevity.enable')
     display flex
     justify-content center
     margin-top 1rem
-    color var(--efu-secondtext)
+    color var(--sb-secondtext)
 
   #bber-talk
     width 100%
@@ -357,7 +357,7 @@ if hexo-config('brevity.enable')
       cursor pointer
       white-space nowrap
 
-      .Shrimply
+      .sb
         font-size 1rem
         margin-left .5rem
 
@@ -370,5 +370,5 @@ if hexo-config('brevity.enable')
   #bbTimeList
     .li-style
       &:hover
-        color var(--efu-theme)
+        color var(--sb-theme)
         transition .3s

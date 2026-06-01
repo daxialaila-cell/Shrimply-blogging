@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="260" viewBox="0 0 700 260">
+  <rect width="700" height="260" rx="12" fill="#f8f9fa"/>
+  <defs><filter id="s"><feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.1"/></filter></defs>
+  <rect x="30" y="60" width="130" height="60" rx="10" fill="#425AEF" filter="url(#s)"/>
+  <text x="95" y="88" text-anchor="middle" fill="white" font-size="14" font-family="sans-serif" font-weight="bold">hexo new</text>
+  <text x="95" y="108" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="12" font-family="sans-serif">写 Markdown</text>
+  <text x="180" y="95" text-anchor="middle" font-size="18" fill="#999">→</text>
+  <rect x="200" y="60" width="130" height="60" rx="10" fill="#3f8cff" filter="url(#s)"/>
+  <text x="265" y="88" text-anchor="middle" fill="white" font-size="14" font-family="sans-serif" font-weight="bold">hexo generate</text>
+  <text x="265" y="108" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="12" font-family="sans-serif">生成静态文件</text>
+  <text x="350" y="95" text-anchor="middle" font-size="18" fill="#999">→</text>
+  <rect x="370" y="60" width="130" height="60" rx="10" fill="#1a73e8" filter="url(#s)"/>
+  <text x="435" y="88" text-anchor="middle" fill="white" font-size="14" font-family="sans-serif" font-weight="bold">hexo deploy</text>
+  <text x="435" y="108" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="12" font-family="sans-serif">部署到服务器</text>
+  <text x="520" y="95" text-anchor="middle" font-size="18" fill="#999">→</text>
+  <rect x="540" y="60" width="130" height="60" rx="10" fill="#0d47a1" filter="url(#s)"/>
+  <text x="605" y="88" text-anchor="middle" fill="white" font-size="14" font-family="sans-serif" font-weight="bold">在线访问</text>
+  <text x="605" y="108" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="12" font-family="sans-serif">全球可访问</text>
+  <text x="350" y="175" text-anchor="middle" fill="#666" font-size="14" font-family="sans-serif">Hexo 写作到发布的全流程</text>
+  <rect x="140" y="195" width="420" height="40" rx="8" fill="#e8f0fe"/>
+  <text x="350" y="221" text-anchor="middle" fill="#425AEF" font-size="13" font-family="sans-serif">全程只需要终端指令，无需打开任何可视化工具</text>
+</svg>

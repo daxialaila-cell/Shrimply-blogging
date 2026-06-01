@@ -1,31 +1,31 @@
 :root
-  --efu-white #fff
-  --efu-white-op rgba(255, 255, 255, 0.2)
-  --efu-black #000
-  --efu-black-op rgba(0, 0, 0, 0.2)
-  --efu-none #00000000
-  --efu-gray #999999
-  --efu-gray-op #9999992b
-  --efu-cyan #00bcd4
-  --efu-cyan-op #00bcd42b
-  --efu-vip #e5a80d
-  --efu-speed #57bd6a
-  --efu-main var(--efu-theme)
-  --efu-main-op var(--efu-theme-op)
-  --efu-main-op-deep var(--efu-theme-op-deep)
-  --efu-main-op-light var(--efu-theme-op-light)
-  --efu-main-none var(--efu-theme-none)
-  --efu-shadow-theme 0 8px 12px -3px var(--efu-theme-op)
-  --efu-shadow-blackdeep 0 2px 16px -3px rgba(0, 0, 0, .15)
-  --efu-shadow-main 0 8px 12px -3px var(--efu-main-op)
-  --efu-shadow-blue 0 8px 12px -3px rgba(40, 109, 234, .20)
-  --efu-shadow-white 0 8px 12px -3px rgba(255, 255, 255, .20)
-  --efu-shadow-black 0 0 12px 4px rgba(0, 0, 0, .05)
-  --efu-shadow-yellow 0px 38px 77px -26px rgba(255, 201, 62, .12)
-  --efu-shadow-red 0 8px 12px -3px #ee7d7936
-  --efu-shadow-green 0 8px 12px -3px #87ee7936
-  --efu-logo-color linear-gradient(215deg, #4584ff 0%, #cf0db9 100%)
-  --efu-snackbar-time 5s
+  --sb-white #fff
+  --sb-white-op rgba(255, 255, 255, 0.2)
+  --sb-black #000
+  --sb-black-op rgba(0, 0, 0, 0.2)
+  --sb-none #00000000
+  --sb-gray #999999
+  --sb-gray-op #9999992b
+  --sb-cyan #00bcd4
+  --sb-cyan-op #00bcd42b
+  --sb-vip #e5a80d
+  --sb-speed #57bd6a
+  --sb-main var(--sb-theme)
+  --sb-main-op var(--sb-theme-op)
+  --sb-main-op-deep var(--sb-theme-op-deep)
+  --sb-main-op-light var(--sb-theme-op-light)
+  --sb-main-none var(--sb-theme-none)
+  --sb-shadow-theme 0 8px 12px -3px var(--sb-theme-op)
+  --sb-shadow-blackdeep 0 2px 16px -3px rgba(0, 0, 0, .15)
+  --sb-shadow-main 0 8px 12px -3px var(--sb-main-op)
+  --sb-shadow-blue 0 8px 12px -3px rgba(40, 109, 234, .20)
+  --sb-shadow-white 0 8px 12px -3px rgba(255, 255, 255, .20)
+  --sb-shadow-black 0 0 12px 4px rgba(0, 0, 0, .05)
+  --sb-shadow-yellow 0px 38px 77px -26px rgba(255, 201, 62, .12)
+  --sb-shadow-red 0 8px 12px -3px #ee7d7936
+  --sb-shadow-green 0 8px 12px -3px #87ee7936
+  --sb-logo-color linear-gradient(215deg, #4584ff 0%, #cf0db9 100%)
+  --sb-snackbar-time 5s
   --global-font-size 14px
   --global-bg #fff
   --hr-border #97bcfb
@@ -43,7 +43,7 @@
   --sidebar-bg #f6f8fa
   --btn-hover-color #ff7242
   --btn-color #fff
-  --btn-bg var(--efu-main)
+  --btn-bg var(--sb-main)
   --text-bg-hover #f6f8fa
   --light-grey #eee
   --text-highlight-color #1f2d3d
@@ -57,17 +57,21 @@
   --hlscrollbar-bg #121212
   --gap .5rem
   --radius 12px
-  --efu-music var(--efu-main)
+  --sb-music var(--sb-main)
 
 body
   position relative
   min-height 100%
-  background var(--efu-background)
-  color var(--efu-fontcolor)
+  background var(--sb-background)
+  color var(--sb-fontcolor)
   font-size $font-size
   font-family $font-family
   line-height 2
+  font-display swap
   -webkit-tap-highlight-color transparent
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+  text-rendering optimizeSpeed
   margin 0
   if !hexo-config('copy.enable')
     user-select none
@@ -77,6 +81,7 @@ body
   box-sizing border-box
 
 html
+  scroll-behavior smooth
   line-height 1.15
   -webkit-text-size-adjust 100%
   text-size-adjust 100%
@@ -97,29 +102,29 @@ main
   opacity .5
   border-radius 8px
   cursor pointer
-  border 2px solid var(--efu-background)
+  border 2px solid var(--sb-background)
 
   &:hover
-    background var(--efu-lighttext)
+    background var(--sb-lighttext)
     display block
 
 *::-webkit-scrollbar-track
   background-color transparent
 
 ::-webkit-scrollbar-thumb
-  background var(--efu-card-border)
+  background var(--sb-card-border)
   opacity .5
   border-radius 8px
   cursor pointer
-  border 2px solid var(--efu-background)
+  border 2px solid var(--sb-background)
 
 ::-webkit-scrollbar-thumb:hover
-  background var(--efu-main)
+  background var(--sb-main)
   opacity 1
   display block !important
 
 ::-webkit-scrollbar-track
-  background-color var(--efu-none)
+  background-color var(--sb-none)
 
 if hexo-config('lazyload.enable') && !hexo-config('lazyload.placeholder')
   img
@@ -130,8 +135,8 @@ if hexo-config('lazyload.enable') && !hexo-config('lazyload.placeholder')
       filter none
 
 ::selection
-  background var(--efu-main)
-  color var(--efu-white)
+  background var(--sb-main)
+  color var(--sb-white)
 
 h1
   font-size 2em
@@ -143,14 +148,14 @@ h1, h2, h3, h4, h5, h6
   font-weight 700
   position relative
   margin .5rem 0
-  color var(--efu-fontcolor)
+  color var(--sb-fontcolor)
 
 hr
   margin .5rem 0
-  border 1px dashed var(--efu-theme-op)
+  border 1px dashed var(--sb-theme-op)
 
 a
-  color var(--efu-fontcolor)
+  color var(--sb-fontcolor)
   text-decoration none
   transition all .3s ease 0s
   overflow-wrap break-word
@@ -192,7 +197,7 @@ button, input
   overflow visible
 
 input::placeholder
-  color var(--efu-gray)
+  color var(--sb-gray)
 
 button, select
   text-transform none
@@ -255,7 +260,7 @@ template
   display none
 
 input::placeholder
-  color var(--efu-fontcolor)
+  color var(--sb-fontcolor)
 
 .table-wrap
   overflow-x scroll
@@ -275,7 +280,7 @@ table
       display none
 
 table thead
-  background var(--efu-secondbg)
+  background var(--sb-secondbg)
 
 table td, table th
   padding .3rem .6rem
@@ -287,7 +292,7 @@ button
   padding 0
   outline 0
   border none
-  color var(--efu-fontcolor)
+  color var(--sb-fontcolor)
   background 0 0
   cursor pointer
 
@@ -304,7 +309,7 @@ img:not([src]), img[src=""]
   font-size 12px
   margin 0
   margin-top 8px
-  color var(--efu-secondtext)
+  color var(--sb-secondtext)
 
 .is-center
   text-align center
@@ -328,8 +333,8 @@ iframe
 
 blockquote
   border var(--style-border-always)
-  background-color var(--efu-secondbg)
-  color var(--efu-secondtext)
+  background-color var(--sb-secondbg)
+  color var(--sb-secondtext)
   border-radius 8px
   margin .5rem 0
   padding .5rem .8rem
@@ -351,14 +356,14 @@ a.extend
     left 0
 
 b, strong
-  color var(--efu-lighttext)
+  color var(--sb-lighttext)
 
 .button--animated
   border-radius 8px
   transition .3s
   position relative
 
-i.Shrimply
+i.sb
   font-size 20px
   line-height 1
   font-synthesis style

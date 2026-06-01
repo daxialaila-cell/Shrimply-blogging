@@ -1,6 +1,6 @@
 #category-bar
   padding .4rem .7rem
-  background var(--efu-card-bg)
+  background var(--sb-card-bg)
   border-radius 12px
   display flex
   white-space nowrap
@@ -17,7 +17,7 @@
   +minWidth1300()
     &:hover
       border var(--style-border-hover)
-      box-shadow var(--efu-shadow-main)
+      box-shadow var(--sb-shadow-main)
 
   +minWidth1200()
     animation: slide-in .6s .3s backwards;
@@ -26,7 +26,7 @@
     margin-bottom .5rem
     margin-top .5rem
     border-radius 0
-    background var(--efu-background)
+    background var(--sb-background)
     padding 0 1rem
     border none
 
@@ -55,8 +55,8 @@
       padding 0 8px
 
     div:hover, a:hover
-      background var(--efu-secondbg-bg)
-      color var(--efu-lighttext)
+      background var(--sb-secondbg-bg)
+      color var(--sb-lighttext)
 
   .category-bar-items
     white-space nowrap
@@ -76,8 +76,8 @@
 
     .category-bar-item
       a:hover
-        background var(--efu-main)
-        color var(--efu-white)
+        background var(--sb-main)
+        color var(--sb-white)
 
       a
         padding .1rem .5rem
@@ -90,13 +90,13 @@
 
         +maxWidth768()
           border-radius 50px
-          background var(--efu-card-bg)
+          background var(--sb-card-bg)
           border var(--style-border-always)
           padding 21px 16px
 
       &.select
-        order -1
+        order -99 !important
 
         a
-          background var(--efu-theme)
-          color var(--efu-white)
+          background var(--sb-theme)
+          color var(--sb-white)

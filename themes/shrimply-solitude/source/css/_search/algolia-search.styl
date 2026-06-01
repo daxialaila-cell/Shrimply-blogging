@@ -8,8 +8,8 @@
   padding 1rem
   width 30rem
   flex-direction column
-  box-shadow var(--efu-shadow-lightblack)
-  background var(--efu-card-bg)
+  box-shadow var(--sb-shadow-lightblack)
+  background var(--sb-card-bg)
   border var(--style-border)
   transition 0.3s
   border-radius 8px
@@ -18,7 +18,7 @@
 
   &:hover
     border var(--style-border-hover)
-    box-shadow var(--efu-shadow-theme)
+    box-shadow var(--sb-shadow-theme)
     +maxWidth768()
       border none
 
@@ -37,14 +37,14 @@
   .search-close-button
     margin-left: 4px
     padding 4px
-    color var(--efu-gray)
+    color var(--sb-gray)
     font-size 1.4em
     line-height 1
     cursor pointer
     transition color .2s ease-in-out 0s
 
     &:hover
-      color var(--efu-main)
+      color var(--sb-main)
 
   .algolia-tips-text
     margin-left .4rem
@@ -63,8 +63,8 @@
       outline 0
       border var(--style-border)
       border-radius 8px
-      background var(--efu-secondbg)
-      color var(--efu-fontcolor)
+      background var(--sb-secondbg)
+      color var(--sb-fontcolor)
 
       &:focus
         border var(--style-border-hover)
@@ -88,7 +88,7 @@
     margin 0
     padding-left 10px
     font-size 14px
-    color var(--efu-gray)
+    color var(--sb-gray)
 
   .algolia-hit-item-link
     width auto
@@ -99,15 +99,15 @@
     font-weight bold
 
     &:hover
-      color var(--efu-main)
+      color var(--sb-main)
   
   .ais-Stats-text
     font-size 12px
 
   mark
-    color var(--efu-theme)
+    color var(--sb-theme)
     font-style normal
-    background var(--efu-card-bg)
+    background var(--sb-card-bg)
 
   .ais-Hits--empty
     font-weight 600
@@ -123,7 +123,7 @@
 
     a
       border-radius 4px
-      color var(--efu-white)
+      color var(--sb-white)
       cursor pointer
       display inline-block
       min-width 1.2rem
@@ -132,12 +132,12 @@
 
   .search-dialog__title
     font-weight 700
-    color var(--efu-main)
+    color var(--sb-main)
     font-size 1.4em
     line-height 1
 
   #algolia-tips
-    color var(--efu-secondtext)
+    color var(--sb-secondtext)
     width 100%
     margin auto
 
@@ -153,7 +153,7 @@
   backdrop-filter blur(12px)
   -webkit-backdrop-filter blur(12px)
   transform translateZ(0)
-  background var(--efu-maskbgdeep)
+  background var(--sb-maskbgdeep)
 
 #algolia-hits
   .tag-list
@@ -164,14 +164,14 @@
     border var(--style-border-always)
 
     &:hover
-      background var(--efu-main)
-      color var(--efu-white)
+      background var(--sb-main)
+      color var(--sb-white)
 
 .ais-Pagination-item--selected a
-  background var(--efu-main)
+  background var(--sb-main)
 
 .algolia-tips
-    color: var(--efu-secondtext);
+    color: var(--sb-secondtext);
     margin-left: auto;
     opacity: .8;
 

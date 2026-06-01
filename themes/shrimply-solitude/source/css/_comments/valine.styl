@@ -30,7 +30,7 @@
       border: var(--style-border-always)
       border-radius: 8px !important;
       overflow: hidden;
-      background-color: var(--efu-maskbg)
+      background-color: var(--sb-maskbg)
       backdrop-filter: saturate(180%) blur(10px);
       transform: translateZ(0);
       overflow-y: auto;
@@ -64,7 +64,7 @@
         flex 1
         position relative
         font-size 13px
-        background var(--efu-secondbg)
+        background var(--sb-secondbg)
         border var(--style-border-always)
         padding 6px 10px
         line-height 1
@@ -75,7 +75,7 @@
   .vquote
 
     .vcard
-      background: var(--efu-card-bg);
+      background: var(--sb-card-bg);
       border none
       border-top: var(--style-border-dashed);
       border-radius: 12px;
@@ -125,7 +125,7 @@
         bottom 9px
         right 0
         transition .3s
-        border 0 solid var(--efu-main)
+        border 0 solid var(--sb-main)
         width 5rem
         margin-left .5rem
         border-radius 12px
@@ -135,10 +135,10 @@
           bottom 94px
 
         button
-          background-color var(--efu-fontcolor)
+          background-color var(--sb-fontcolor)
           width 100%
           height 100%
-          color var(--efu-card-bg)
+          color var(--sb-card-bg)
           border-radius 12px
           opacity .2
 
@@ -155,20 +155,20 @@
     line-height 1.5
     width 100%
     font-size 14px
-    background var(--efu-secondbg)
-    color var(--efu-fontcolor)
+    background var(--sb-secondbg)
+    color var(--sb-fontcolor)
     border-radius 12px
     min-height 121px
     border var(--style-border-always)
 
     &:focus
       border var(--style-border-hover-always)
-      box-shadow var(--efu-shadow-main)
+      box-shadow var(--sb-shadow-main)
 
   .vcard
     margin-top: 0
     margin-bottom: .5rem
-    background: var(--efu-card-bg);
+    background: var(--sb-card-bg);
     transition: .3s;
     border-radius: 12px;
     padding: 0;
@@ -182,7 +182,7 @@
     +maxWidth768()
       padding: 1rem;
       border: var(--style-border-always);
-      box-shadow: var(--efu-shadow-border)
+      box-shadow: var(--sb-shadow-border)
 
     .vimg
       width 32px
@@ -211,40 +211,40 @@
       margin-right 0
 
     .vsys
-      background: var(--efu-card-bg);
+      background: var(--sb-card-bg);
       border: var(--style-border-always);
       padding: 3px 5px
       border-radius: 8px;
-      color: var(--efu-secondtext)
+      color: var(--sb-secondtext)
       display: inline
       font-size: .5rem;
 
     .vat
       display: flex;
       align-items: center;
-      color: var(--efu-lighttext)
+      color: var(--sb-lighttext)
       padding: 3px 12px
       transition: all .3s;
       border-radius: 8px;
-      background-color: var(--efu-secondbg);
+      background-color: var(--sb-secondbg);
       border: var(--style-border-always);
       position: absolute;
       right: 0;
       bottom: 18px
 
       &:hover
-        background-color: var(--efu-lighttext)
-        color: var(--efu-card-bg)
+        background-color: var(--sb-lighttext)
+        color: var(--sb-card-bg)
 
   .vquote
     border-left none
 
   .vicon.actived
-    fill var(--efu-main)
+    fill var(--sb-main)
 
 #page
   .vcard
     padding: 1rem 1rem 1.5rem;
     border: var(--style-border);
     border-top: var(--style-border);
-    box-shadow: var(--efu-shadow-border);
+    box-shadow: var(--sb-shadow-border);

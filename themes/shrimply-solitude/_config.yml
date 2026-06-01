@@ -284,7 +284,7 @@ post:
       # - name: Github Sponsor
       #   qcode: https://s3.qjqq.cn/47/661ba900c4bc1.webp!color
       #   url: https://github.com/sponsors/daxialaila-cell
-      #   color: var(--efu-black)
+      #   color: var(--sb-black)
 
   # Share icon
   # 分享图标
@@ -722,7 +722,7 @@ verify_site:
 # --------------------------- start ---------------------------
 # Legacy CSS Prefix 
 # CSS前缀配置
-css_prefix: true
+css_prefix: false
 # --------------------------- end ---------------------------
 
 # --------------------------- start ---------------------------

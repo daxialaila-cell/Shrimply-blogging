@@ -19,10 +19,10 @@ const coverColor = (music = false) => {
 
 const setDefaultThemeColors = () => {
     const themeVars = {
-        '--efu-main': 'var(--efu-theme)',
-        '--efu-main-op': 'var(--efu-theme-op)',
-        '--efu-main-op-deep': 'var(--efu-theme-op-deep)',
-        '--efu-main-none': 'var(--efu-theme-none)'
+        '--sb-main': 'var(--sb-theme)',
+        '--sb-main-op': 'var(--sb-theme-op)',
+        '--sb-main-op-deep': 'var(--sb-theme-op-deep)',
+        '--sb-main-none': 'var(--sb-theme-none)'
     };
     Object.entries(themeVars).forEach(([key, value]) => {
         document.documentElement.style.setProperty(key, value);
@@ -54,7 +54,7 @@ const rgbToHex = ([r, g, b]) => {
 const setMusicColor = (value) => {
     if (!value) return setDefaultThemeColors();
     const item = document.querySelector("#nav-music")
-    item.style.setProperty('--efu-music', value);
+    item.style.setProperty('--sb-music', value);
 }
 
 
@@ -62,10 +62,10 @@ const setThemeColors = (value, r = null, g = null, b = null) => {
     if (!value) return setDefaultThemeColors();
 
     const themeColors = {
-        '--efu-main': value,
-        '--efu-main-op': value + '23',
-        '--efu-main-op-deep': value + 'dd',
-        '--efu-main-none': value + '00'
+        '--sb-main': value,
+        '--sb-main-op': value + '23',
+        '--sb-main-op-deep': value + 'dd',
+        '--sb-main-none': value + '00'
     };
     
     Object.entries(themeColors).forEach(([key, color]) => {
@@ -106,12 +106,12 @@ const LightenDarkenColor = (col, amt) => {
 const adjustCardStyles = () => {
     const cardContents = document.querySelectorAll('.card-content');
     cardContents.forEach(item => {
-        item.style.setProperty('--efu-card-bg', 'var(--efu-white)');
+        item.style.setProperty('--sb-card-bg', 'var(--sb-white)');
     });
 
     const authorInfo = document.querySelectorAll('.sayhi');
     authorInfo.forEach(item => {
-        item.style.setProperty('background', 'var(--efu-white-op)');
-        item.style.setProperty('color', 'var(--efu-white)');
+        item.style.setProperty('background', 'var(--sb-white-op)');
+        item.style.setProperty('color', 'var(--sb-white)');
     });
 }

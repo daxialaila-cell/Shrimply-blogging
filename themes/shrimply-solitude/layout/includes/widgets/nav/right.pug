@@ -2,15 +2,15 @@
 each item in custom
     .nav-button(id=item.id)
         a.site-page(href=url_for(item.url) || 'javascript:void(0);', onclick=item.onclick, title=item.title || '')
-            i.Shrimply(class=item.icon || '')
+            i.sb(class=item.icon || '')
 if theme.nav.right.random
     .nav-button#randomPost_button
         a.site-page(onclick="toRandomPost()", title=_p('nav.randompost'), href="javascript:void(0);")
-            i.Shrimply.fas.fa-dice-d6
+            i.sb.fas.fa-dice-d6
 if theme.search.enable
     .nav-button#search-button
         a.site-page.social-icon.search(href="javascript:void(0);", title=_p('nav.search'))
-            i.Shrimply.fas.fa-magnifying-glass
+            i.sb.fas.fa-magnifying-glass
 if theme.console.enable
     .nav-button#nav-console
         a.console_switchbutton(onclick="sco.showConsole()", title=_p('nav.console'), href="javascript:void(0);")
@@ -21,8 +21,8 @@ if theme.console.enable
 if !theme.rightside.percent
     .nav-button#nav-totop(onclick="sco.toTop()")
         a.totopbtn
-            i.Shrimply.fas.fa-arrow-up
+            i.sb.fas.fa-arrow-up
             span#percent= "0"
 #toggle-menu
     a.site-page
-        i.Shrimply.fas.fa-bars
+        i.sb.fas.fa-bars

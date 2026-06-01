@@ -7,20 +7,20 @@ if hexo-config('right_menu.enable')
     height fit-content
     top 10%
     left 10%
-    background-color var(--efu-maskbgdeep)
+    background-color var(--sb-maskbgdeep)
     backdrop-filter blur(20px)
     transform translateZ(0)
-    color var(--efu-fontcolor)
+    color var(--sb-fontcolor)
     border-radius 12px
     z-index 99994
     border var(--style-border)
     user-select none
-    box-shadow var(--efu-shadow-black)
+    box-shadow var(--sb-shadow-black)
     transition border .3s
 
     &:hover
       border var(--style-border-hover)
-      box-shadow var(--efu-shadow-theme)
+      box-shadow var(--sb-shadow-theme)
 
     .rightMenu-group
       padding .35rem .3rem
@@ -49,9 +49,9 @@ if hexo-config('right_menu.enable')
         padding .25rem .5rem
 
         &:hover
-          background-color var(--efu-lighttext)
-          color var(--efu-card-bg)
-          box-shadow var(--efu-shadow-main)
+          background-color var(--sb-lighttext)
+          color var(--sb-card-bg)
+          box-shadow var(--sb-shadow-main)
 
         i
           display inline-block
@@ -65,7 +65,7 @@ if hexo-config('right_menu.enable')
           line-height 1.5rem
 
     .rightMenu-line
-      border-top 1px dashed var(--efu-theme-op)
+      border-top 1px dashed var(--sb-theme-op)
 
   #rightmenu-mask
     position fixed

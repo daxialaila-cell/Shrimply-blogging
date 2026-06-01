@@ -161,10 +161,10 @@ function initThemeColor() {
   const currentTop = window.scrollY || document.documentElement.scrollTop;
   const themeColor =
     currentTop > 0
-      ? "--efu-card-bg"
+      ? "--sb-card-bg"
       : PAGE_CONFIG.is_post
-      ? "--efu-main"
-      : "--efu-background";
+      ? "--sb-main"
+      : "--sb-background";
   applyThemeColor(
     getComputedStyle(document.documentElement).getPropertyValue(themeColor)
   );

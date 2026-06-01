@@ -14,9 +14,10 @@ if group
     div.banners-links
         each value,label in group
             - var array = value.split('||')
-            a.banners-link-btn(href=url_for(trim(array[0])) style=`background-image: ${array[2]} `)
+            - var gradient = array[2] ? array[2].trim() : ''
+            a.banners-link-btn(href=url_for(trim(array[0])) data-gradient=gradient)
                 if array[1]
-                    i.Shrimply(class=array[1])
+                    i.sb(class=array[1])
                 .banners-link-title= label
 
 if icon

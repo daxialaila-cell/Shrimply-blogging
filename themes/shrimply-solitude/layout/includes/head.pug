@@ -30,6 +30,12 @@ noscript= _p('head.noscript')
 //- 网站图标
 link(rel="icon", href=url_for(theme.site.icon))
 
+//- Performance: preconnect to CDN origins
+link(rel="dns-prefetch", href="https://cdn.jsdelivr.net")
+link(rel="preconnect", href="https://cdn.jsdelivr.net", crossorigin)
+link(rel="dns-prefetch", href="https://lib.baomitu.com")
+link(rel="preconnect", href="https://lib.baomitu.com", crossorigin)
+
 //- 主样式表
 link(rel="stylesheet", href=url_for(theme.cdn.main_css))
 

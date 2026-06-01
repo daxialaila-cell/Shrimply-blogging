@@ -8,9 +8,9 @@
 
 @keyframes playingShadow
   0%, 100%
-    box-shadow: 0 0px 12px -3px var(--efu-none)
+    box-shadow: 0 0px 12px -3px var(--sb-none)
   50%
-    box-shadow: 0 0px 12px 0px var(--efu-music)
+    box-shadow: 0 0px 12px 0px var(--sb-music)
 
 @keyframes lightBar
   0%, 100%
@@ -40,21 +40,21 @@
     display none
 
   &.playing
-    box-shadow: 0 0px 12px -3px var(--efu-none)
+    box-shadow: 0 0px 12px -3px var(--sb-none)
     animation: playingShadow 5s linear infinite
 
     .aplayer.aplayer-withlrc
       .aplayer-pic
         box-shadow: 0 0 14px #ffffffa6
         transform: rotate(0deg) scale(1.1)
-        border-color: var(--efu-white)
+        border-color: var(--sb-white)
         animation-play-state: running
 
       .aplayer-info
-        color: var(--efu-white)
+        color: var(--sb-white)
 
     .aplayer
-      background: var(--efu-music)
+      background: var(--sb-music)
       backdrop-filter: saturate(180%) blur(20px)
       transform: translateZ(0)
 
@@ -81,7 +81,7 @@
       width 180px
       right 0
       left auto
-      background linear-gradient(to left,var(--efu-music) 60%,transparent)
+      background linear-gradient(to left,var(--sb-music) 60%,transparent)
     &:hover
       #nav-music-hoverTips > i:not(#music-play)
         display: block
@@ -100,7 +100,7 @@
 
     .aplayer-info
       height: 100%
-      color: var(--efu-fontcolor)
+      color: var(--sb-fontcolor)
       margin 0
       margin-right 8px
       padding: 0
@@ -108,8 +108,8 @@
       align-items: center
 
   #nav-music-hoverTips
-    color: var(--efu-white)
-    background: var(--efu-music)
+    color: var(--sb-white)
+    background: var(--sb-music)
     width: 100%
     height: 100%
     position: absolute
@@ -133,7 +133,7 @@
       cursor pointer
 
   .aplayer
-    background: var(--efu-music)
+    background: var(--sb-music)
     border-radius: 60px
     height: 41px
     display: flex
@@ -172,7 +172,7 @@
           text-overflow: ellipsis
           transition: 0.3s
           user-select: none
-          color var(--efu-white)
+          color var(--sb-white)
 
       .aplayer-controller
         // position: absolute
@@ -195,7 +195,7 @@
             .aplayer-played
               height: 100%
               opacity: 0.1
-              background-color: var(--efu-white) !important
+              background-color: var(--sb-white) !important
               animation: lightBar 5s ease infinite
               animation-play-state: paused
 
@@ -230,7 +230,7 @@
       margin-bottom: -15px
 
       p.aplayer-lrc-current
-        color: var(--efu-white)
+        color: var(--sb-white)
         border: none
         min-height: 20px
         filter: none

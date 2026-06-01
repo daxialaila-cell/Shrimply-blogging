@@ -3,8 +3,8 @@
 
 .tags-group-title
   font-size 14px
-  color var(--efu-card-bg)
-  background var(--efu-lighttext)
+  color var(--sb-card-bg)
+  background var(--sb-lighttext)
   position absolute
   width 100%
   height 100%
@@ -26,16 +26,16 @@
 
   .flink-desc
     margin 0
-    color var(--efu-secondtext)
+    color var(--sb-secondtext)
 
   .site-card-tag
     position absolute
     top 0
     left 0
     padding 4px 8px
-    background-color var(--efu-blue)
-    box-shadow var(--efu-shadow-blue)
-    color var(--efu-white)
+    background-color var(--sb-blue)
+    box-shadow var(--sb-shadow-blue)
+    color var(--sb-white)
     z-index 1
     border-radius 0 0 12px 0
     transition .3s
@@ -52,10 +52,10 @@
       animation light_tag 4s both infinite
 
     &.vip
-      background-color var(--efu-vip)
+      background-color var(--sb-vip)
 
     &.speed
-      background-color var(--efu-speed)
+      background-color var(--sb-speed)
 
   .site-card-group
     padding 20px 0
@@ -77,8 +77,8 @@
       height 200px
       position relative
       width calc(100% / 7 - 16px)
-      background var(--efu-card-bg)
-      box-shadow var(--efu-shadow-border)
+      background var(--sb-card-bg)
+      box-shadow var(--sb-shadow-border)
 
       +maxWidth1200()
         width calc(20% - 16px)
@@ -133,7 +133,7 @@
           min-width 20px
           min-height 20px
           transform scale(1.1)
-          background var(--efu-secondbg)
+          background var(--sb-secondbg)
 
         .site-card-text
           display flex
@@ -141,7 +141,7 @@
           align-items flex-start
 
           .title
-            color var(--efu-fontcolor)
+            color var(--sb-fontcolor)
             text-align left
             font-weight 600
             display -webkit-box
@@ -152,7 +152,7 @@
 
           .desc
             font-size .7rem
-            color var(--efu-fontcolor)
+            color var(--sb-fontcolor)
             opacity .7
             transition all .3s
             text-align left
@@ -165,8 +165,8 @@
 
       &:hover
         border var(--style-border-hover)
-        box-shadow var(--efu-shadow-main)
-        background var(--efu-main)
+        box-shadow var(--sb-shadow-main)
+        background var(--sb-main)
 
         .site-card-tag
           left: -60px
@@ -175,8 +175,8 @@
           transform scale(1)
           filter brightness(.3)
           border-radius 12px
-          background var(--efu-lighttext)
-          background var(--efu-main)
+          background var(--sb-lighttext)
+          background var(--sb-main)
           +minWidth768()
             height 80px
 
@@ -184,13 +184,13 @@
               transform scale(1.1)
 
         a
-          color var(--efu-white)
-          background var(--efu-main)
-          box-shadow var(--efu-shadow-main)
+          color var(--sb-white)
+          background var(--sb-main)
+          box-shadow var(--sb-shadow-main)
 
         .info
           height 120px
-          background-color var(--efu-theme)
+          background-color var(--sb-theme)
 
           img
             width 0
@@ -200,10 +200,10 @@
             min-height 0
 
           .title
-            color var(--efu-white)
+            color var(--sb-white)
 
           .desc
-            color var(--efu-white)
+            color var(--sb-white)
             text-align left
             -webkit-line-clamp 4
             width 100%
@@ -236,8 +236,8 @@
     position relative
     width calc(20% - 12px)
     border var(--style-border-always)
-    box-shadow var(--efu-shadow-border)
-    background var(--efu-card-bg)
+    box-shadow var(--sb-shadow-border)
+    background var(--sb-card-bg)
     display flex
     float left
     overflow hidden
@@ -272,7 +272,7 @@
         border-radius 32px
         margin 15px 20px 15px 15px
         transition .3s
-        background var(--efu-background)
+        background var(--sb-background)
         min-width 60px
         min-height 60px
         float left
@@ -307,7 +307,7 @@
         text-align left
         font-size 19px
         line-height 20px
-        color var(--efu-fontcolor)
+        color var(--sb-fontcolor)
         display block
         padding 0 10px 0 0
         font-weight 700
@@ -319,7 +319,7 @@
       .flink-item-desc
         white-space normal
         padding 5px 10px 16px 0
-        color var(--efu-fontcolor)
+        color var(--sb-fontcolor)
         text-align left
         height 40px
         text-overflow ellipsis
@@ -331,7 +331,7 @@
         font-size .93em
 
     &:hover
-      background var(--efu-theme)
+      background var(--sb-theme)
 
       .site-card-tag
         left: -50px
@@ -352,10 +352,10 @@
         min-width calc(100% - 20px)
 
         .flink-item-name
-          color var(--efu-card-bg)
+          color var(--sb-card-bg)
 
         .flink-item-desc
-          color var(--efu-card-bg)
+          color var(--sb-card-bg)
           overflow hidden
           width 100%
 

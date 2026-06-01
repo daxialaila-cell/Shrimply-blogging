@@ -5,12 +5,12 @@
 .banner-button-group
     if theme.footer.randomlink
         a.banner-button.secondary(onclick="travelling()")
-            i.Shrimply.fas.fa-tower-broadcast
+            i.sb.fas.fa-tower-broadcast
             span.banner-button-text=_p('link.banner.random')
     if theme.comment.use
         a.banner-button(onclick="sco.scrollToComment()")
-            i.Shrimply.fas.fa-circle-chevron-right
-            span.Shrimply.banner-button-text=_p('link.banner.toComment')
+            i.sb.fas.fa-circle-chevron-right
+            span.sb.banner-button-text=_p('link.banner.toComment')
 
 - if (site.data.links.swiper !== false)
     .tags-group-all.nowrapMove

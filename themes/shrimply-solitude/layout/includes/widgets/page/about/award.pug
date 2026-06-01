@@ -16,14 +16,14 @@ if site.data.about.rewardList && site.data.about.award.enable
                         .reward-list-bottom-group
                             .reward-list-item-money(style="background-color:" + reward.color)
                                 if reward.icon
-                                    i.Shrimply(class=reward.icon)
+                                    i.sb(class=reward.icon)
                                 | ¥ #{reward.money}
                             time.datetime.reward-list-item-time(datetime=moment(reward.time).format())
                 if theme.post.award.enable
                     .post-reward
                         .post-reward(onclick="AddRewardMask()")
                         .reward-button(title=_p('award.tipping'))
-                            i.Shrimply.fas.fa-heart
+                            i.sb.fas.fa-heart
                             = _p('award.tipping')
                         .reward-main
                             ul.reward-all

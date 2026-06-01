@@ -1,161 +1,196 @@
 .search-dialog
   position fixed
-  top 5rem
+  top 50%
   left 50%
+  transform translate(-50%, -50%)
   z-index 1001
   display none
-  margin-left -15rem
-  padding 1rem
-  width 30rem
-  box-shadow var(--efu-shadow-lightblack)
-  background var(--efu-card-bg)
-  border var(--style-border)
-  transition 0.3s
-  border-radius 8px
-  animation slide-in .6s ease 0s 1 normal none running
-  gap 16px
-  flex-direction: column
-
-  &:hover
-    border var(--style-border-hover)
-    box-shadow var(--efu-shadow-theme)
-    +maxWidth768()
-      border none
+  flex-direction column
+  width 520px
+  max-width 92vw
+  background var(--sb-card-bg)
+  border-radius 18px
+  box-shadow 0 20px 60px rgba(0,0,0,.25), 0 0 0 1px rgba(0,0,0,.06)
+  padding 28px 32px
+  animation fadeInUp .35s cubic-bezier(.4,0,.2,1)
 
   +maxWidth768()
-    top 0
+    top auto
+    bottom 0
     left 0
-    margin 0
+    transform none
     width 100%
-    height 100%
-    border 0
+    max-width 100%
+    border-radius 20px 20px 0 0
+    padding 24px 20px 36px
+    animation slideUp .3s ease
+
+  &:hover
+    box-shadow 0 20px 60px rgba(0,0,0,.25), 0 0 0 1px rgba(0,0,0,.06)
 
   .search-dialog-title
     font-weight 700
-    color var(--efu-main)
-    font-size 1.4em
-    line-height 1
+    font-size 1.15em
+    color var(--sb-fontcolor)
+    letter-spacing .3px
 
   .search-close-button
-    color var(--efu-gray)
-    font-size 1.4em
-    line-height 1
+    width 32px
+    height 32px
+    display flex
+    align-items center
+    justify-content center
+    border-radius 50%
+    background var(--sb-secondbg)
+    color var(--sb-secondtext)
+    font-size 1em
     cursor pointer
-    transition color .2s ease-in-out 0s
+    transition all .2s
 
     &:hover
-      color var(--efu-main)
+      background var(--sb-main)
+      color #fff
 
   #search-results
-    max-height calc(80vh - 130px)
+    max-height 340px
     overflow-y auto
-    margin-top 8px
+    margin-top 12px
+    display flex
+    flex-direction column
+    gap 4px
 
     .search-result-item
-      padding-left 0
-      font-weight 700
+      padding 0
 
       .search-result-title
-        position relative
-        transition color .2s ease-in-out 0s
-        white-space nowrap
-        text-overflow ellipsis
-        overflow hidden
         display block
+        padding 10px 14px
+        border-radius 10px
+        font-size 14px
+        font-weight 600
+        color var(--sb-fontcolor)
+        transition all .2s
+        white-space nowrap
+        overflow hidden
+        text-overflow ellipsis
 
         &:hover
-          color var(--efu-hovertext)
+          background var(--sb-secondbg)
+          color var(--sb-main)
 
         em
-          color var(--efu-theme)
+          color var(--sb-main)
+          font-weight 800
           font-style normal
+          background var(--sb-main-op-light)
+          padding 0 2px
+          border-radius 3px
+
+    .search-result-empty
+      display block
+      text-align center
+      padding 32px 0
+      font-size 14px
+      color var(--sb-secondtext)
 
     +maxWidth768()
-      max-height 80vh !important
+      max-height 55vh
 
   #search-pagination
+    margin-top 8px
+
     .pagination-list
+      display flex
+      justify-content center
+      gap 6px
       padding 0
-      text-align center
 
       .pagination-item
-        color var(--efu-fontcolor)
-        display inline-block
-        min-width 1.2rem
-        height 1.2rem
-        text-align center
-        line-height 1.2rem
+        min-width 32px
+        height 32px
+        display flex
+        align-items center
+        justify-content center
+        border-radius 8px
+        font-size 13px
+        font-weight 600
+        color var(--sb-secondtext)
         cursor pointer
+        transition all .2s
 
         &:hover
-          color var(--efu-main)
+          background var(--sb-secondbg)
+          color var(--sb-main)
 
         &.select
-          border-radius 4px
-          background var(--efu-main)
-          color var(--efu-white)
-          cursor default
-
-          &:hover
-            color var(--efu-white)
+          background var(--sb-main)
+          color #fff
 
   #search-tips
-    color var(--efu-secondtext)
-    right 0
-    margin auto
+    margin-top 8px
+    text-align center
 
     .search-result-count
-      color var(--efu-gray)
       font-size 12px
-
-      b
-        color var(--efu-main)
+      color var(--sb-secondtext)
+      opacity .7
 
   .search-box
-    position relative
-    margin 0 auto
-    max-width 100%
     width 100%
+    margin-top 12px
 
     input
-      height 100%
       width 100%
-      border-radius 8px
-      border var(--style-border)
-      padding 0.25rem 0.7rem;
-      outline 0
-      background var(--efu-secondbg)
-      color var(--efu-fontcolor)
-      caret-color var(--efu-theme)
+      height 46px
+      border-radius 12px
+      border 2px solid var(--sb-secondbg)
+      background var(--sb-secondbg)
+      padding 0 16px
+      font-size 15px
+      color var(--sb-fontcolor)
+      outline none
+      transition all .25s
+
+      &:focus
+        border-color var(--sb-main)
+        background var(--sb-card-bg)
+        box-shadow 0 0 0 4px var(--sb-main-op)
 
       &::placeholder
-        color var(--efu-gray)
-        opacity .8
+        color var(--sb-secondtext)
+        opacity .6
 
 #search-mask
   position fixed
   inset 0
   z-index 1000
   display none
-  background rgba(0, 0, 0, 0.6)
-  backdrop-filter blur(12px)
-  -webkit-backdrop-filter blur(12px)
-  transform translateZ(0)
-  background var(--efu-maskbgdeep)
-
-#search-hits
-  .tag-list
-    padding 4px 8px
-    border-radius 8px
-    margin-right 0.5rem
-    margin-top 0.5rem
-    border var(--style-border-always)
-
-    &:hover
-      background var(--efu-main)
-      color var(--efu-white)
+  background rgba(0,0,0,.55)
+  backdrop-filter blur(16px)
+  -webkit-backdrop-filter blur(16px)
+  animation fadeIn .3s ease
 
 .search-nav
-  display: flex
-  justify-content: space-between
-  align-content: center
+  display flex
+  justify-content space-between
+  align-items center
+
+@keyframes fadeInUp
+  from
+    opacity 0
+    transform translate(-50%, -40%)
+  to
+    opacity 1
+    transform translate(-50%, -50%)
+
+@keyframes slideUp
+  from
+    transform translateY(100%)
+  to
+    transform translateY(0)
+
+@keyframes fadeIn
+  from
+    opacity 0
+  to
+    opacity 1

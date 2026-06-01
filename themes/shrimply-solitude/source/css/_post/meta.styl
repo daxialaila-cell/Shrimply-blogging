@@ -1,7 +1,7 @@
 .post
   #page-header.post-bg
     height 20rem
-    background-color var(--efu-background)
+    background-color var(--sb-background)
     transition .6s
     overflow hidden
 
@@ -10,14 +10,14 @@
 
     +maxWidth768()
       height 15rem
-      background-color var(--efu-main) !important
+      background-color var(--sb-main) !important
       transition 0s
       margin-bottom -12px
 
     &::before
       transition .3s
       height 20rem
-      background-color var(--efu-main)
+      background-color var(--sb-main)
       opacity 1
       position absolute
       top 0
@@ -29,7 +29,7 @@
       +minWidth1300()
         height 25rem
         opacity 0
-        background-color var(--efu-main)
+        background-color var(--sb-main)
         animation slide-in-op .6s 0s forwards
 
       +maxWidth768()
@@ -65,7 +65,7 @@
         height 100%
         top 0
         left 0
-        box-shadow 110px -130px 300px 60px var(--efu-main) inset
+        box-shadow 110px -130px 300px 60px var(--sb-main) inset
 
       +minWidth768()
         width 70%
@@ -91,7 +91,7 @@
         height 15rem
 
         &:after
-          box-shadow 0 0 205px 59px var(--efu-main) inset
+          box-shadow 0 0 205px 59px var(--sb-main) inset
 
       &.loaded
         display block
@@ -101,7 +101,7 @@
     position absolute
     padding 0 3rem
     margin 0 auto
-    color var(--efu-white)
+    color var(--sb-white)
     max-width 1400px
     display flex
     flex-direction column
@@ -128,7 +128,7 @@
       padding-top 4rem
 
     .post-title
-      color var(--efu-white)
+      color var(--sb-white)
       font-weight 700
       font-size 2.3rem
       line-height 1.2
@@ -207,9 +207,9 @@
 
           &:hover
             opacity 1
-            background var(--efu-white-op)
+            background var(--sb-white-op)
             text-decoration none
-            color var(--efu-white)
+            color var(--sb-white)
 
         .post-meta-pv-cv
           margin-left .8rem
@@ -226,7 +226,7 @@
 
           &:hover
             opacity 1
-            background var(--efu-white-op)
+            background var(--sb-white-op)
 
         .post-meta-wechat
           margin-right .8rem
@@ -236,7 +236,7 @@
 
           &:hover
             opacity 1
-            background var(--efu-white-op)
+            background var(--sb-white-op)
 
     #post-firstinfo
       text-align left
@@ -261,8 +261,8 @@
           margin-bottom .4rem
 
         .post-meta-original
-          background var(--efu-white-op)
-          color var(--efu-white)
+          background var(--sb-white-op)
+          color var(--sb-white)
           padding 0 .5rem
           font-size .7rem
           margin auto
@@ -274,8 +274,8 @@
           display flex
 
           &:hover
-            color var(--efu-main)
-            background var(--efu-white)
+            color var(--sb-main)
+            background var(--sb-white)
             border-radius 8px
 
         .tag_share
@@ -293,7 +293,7 @@
               display none
 
             .post-meta__tags
-              color var(--efu-white)
+              color var(--sb-white)
               opacity .8
               margin-right 8px
               padding 0 8px
@@ -303,15 +303,15 @@
               flex-direction row
 
               &:hover
-                color var(--efu-white)
+                color var(--sb-white)
                 opacity 1
-                background var(--efu-white-op)
+                background var(--sb-white-op)
 
               +maxWidth768()
                 margin 0 .5rem 0 0
 
         span.post-meta-categories
-          background-color var(--efu-white-op)
+          background-color var(--sb-white-op)
           border-radius 8px
           line-height 32px
           height 32px
@@ -321,10 +321,10 @@
             margin-left 8px
 
           &:hover
-            background-color var(--efu-white)
+            background-color var(--sb-white)
 
           a.post-meta-categories
-            color var(--efu-white)
+            color var(--sb-white)
             font-size .7rem
             width 100%
             height 100%
@@ -332,14 +332,14 @@
             padding 0 .5rem
 
             &:hover
-              color var(--efu-main)
+              color var(--sb-main)
 
 #post 
   #post-info
     height auto
     position unset
     padding 1rem 2rem
-    background var(--efu-hovertext)
+    background var(--sb-hovertext)
     border-radius 12px 12px 0 0
     +minWidth768()
       min-height 250px

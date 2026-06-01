@@ -11,17 +11,17 @@
 
     #nav
       transition .3s
-      background var(--efu-card-bg)
+      background var(--sb-card-bg)
 
       a
-        color var(--efu-fontcolor)
+        color var(--sb-fontcolor)
 
         &:hover
-          color var(--efu-card-bg)
+          color var(--sb-card-bg)
 
   &:not(.nav-fixed)
     #nav
-      background var(--efu-none)
+      background var(--sb-none)
       transition .3s
 
       +maxWidth768()
@@ -34,12 +34,12 @@
             .console_switchbutton
               label
                 i
-                  background var(--efu-white)
+                  background var(--sb-white)
 
 #page-header
   #site-title
     margin 0
-    color var(--efu-white)
+    color var(--sb-white)
     font-size 1.85em
 
     +minWidth768()
@@ -62,7 +62,7 @@
     a
       &:hover
         span
-          &.Shrimply
+          &.sb
             opacity 0
 
             +maxWidth768()
@@ -119,8 +119,8 @@
             width 25px
             height 25px
             border-radius 40px
-            background var(--efu-fontcolor)
-            color var(--efu-card-bg)
+            background var(--sb-fontcolor)
+            color var(--sb-card-bg)
             position absolute
             top 5px
             right 5px
@@ -132,7 +132,7 @@
             &:hover
               label
                 i
-                  background var(--efu-card-bg)
+                  background var(--sb-card-bg)
 
                 .left
                   width .5rem
@@ -157,7 +157,7 @@
                 transition all .3s
                 position absolute
                 border-radius 12px
-                background var(--efu-fontcolor)
+                background var(--sb-fontcolor)
 
                 &.left
                   top 0
@@ -183,7 +183,7 @@
         &:hover
           a
             &.totopbtn
-              background var(--efu-lighttext)
+              background var(--sb-lighttext)
 
         &:not(.long):hover
           a
@@ -199,8 +199,8 @@
       top 0
       transition .3s
       box-shadow none
-      background var(--efu-card-bg)
-      outline 1px solid var(--efu-card-border)
+      background var(--sb-card-bg)
+      outline 1px solid var(--sb-card-border)
 
       #menus
         +minWidth900()
@@ -301,7 +301,7 @@
   font-size 1.3em
   opacity 0
   transition all .5s ease 0s
-  outline 1px solid var(--efu-none)
+  outline 1px solid var(--sb-none)
   justify-content space-between
 
   +maxWidth768()
@@ -323,7 +323,7 @@
       display inline-block
 
     &:hover
-      color var(--efu-white)
+      color var(--sb-white)
 
   #site-name
     padding 0
@@ -339,7 +339,7 @@
     &:hover
       @media (hover: hover)
         i, span, img
-          color var(--efu-card-bg)
+          color var(--sb-card-bg)
           transition .3s
 
       +minWidth900()
@@ -359,7 +359,7 @@
       justify-content center
       font-size 22px
       line-height 1
-      color var(--efu-card-bg)
+      color var(--sb-card-bg)
 
     if hexo-config('site.name.class') == i_class
       i
@@ -400,20 +400,20 @@
 
   a
     transition .3s
-    color var(--efu-white)
+    color var(--sb-white)
     padding .3rem .4rem 0
     border-radius 8px
 
     &:hover
-      background var(--efu-white-op)
+      background var(--sb-white-op)
       transition .3s
-      color var(--efu-white)
+      color var(--sb-white)
 
       +maxWidth768()
-        background var(--efu-none)
+        background var(--sb-none)
         box-shadow none
         transition .3s
-        color var(--efu-fontcolor)
+        color var(--sb-fontcolor)
 
   #menus
     display flex
@@ -450,8 +450,8 @@
       .menus_item_child
         padding 6px 4px 8px 4px
         border-radius 100px
-        background-color var(--efu-maskbgdeep)
-        box-shadow var(--efu-shadow-black)
+        background-color var(--sb-maskbgdeep)
+        box-shadow var(--sb-shadow-black)
         border var(--style-border)
         transition .3s
         backdrop-filter blur(20px)
@@ -476,12 +476,12 @@
             border-radius 100px
             padding .3rem .8rem
             width 100%
-            color var(--efu-fontcolor)
+            color var(--sb-fontcolor)
 
             &:hover
-              background var(--efu-lighttext)
-              color var(--efu-card-bg)
-              box-shadow var(--efu-shadow-main)
+              background var(--sb-lighttext)
+              color var(--sb-card-bg)
+              box-shadow var(--sb-shadow-main)
               margin 0 auto
               transform scale(1)
               padding .3rem 1rem
@@ -507,7 +507,7 @@
         .menus_item_child
           display block
           border var(--style-border-hover)
-          box-shadow var(--efu-shadow-main)
+          box-shadow var(--sb-shadow-main)
           opacity 1
           pointer-events all
           transform translateY(0) scale(1)
@@ -535,7 +535,7 @@
     .back-home-button
       &:hover
         +minWidth900()
-          box-shadow var(--efu-shadow-main)
+          box-shadow var(--sb-shadow-main)
           cursor pointer
 
   #page-name
@@ -559,8 +559,8 @@
 
       &:hover
         +minWidth900()
-          color var(--efu-lighttext) !important
-          background var(--efu-none)
+          color var(--sb-lighttext) !important
+          background var(--sb-none)
           box-shadow none
 
     &-mask
@@ -596,7 +596,7 @@
     .totopbtn
       i
         opacity 1
-        color var(--efu-card-bg)
+        color var(--sb-card-bg)
         transition .3s
 
     #percent
@@ -641,8 +641,8 @@ if hexo-config('nav.group')
       font-size 20px
 
     &:hover
-      background var(--efu-main)
-      color var(--efu-card-bg)
+      background var(--sb-main)
+      color var(--sb-card-bg)
 
       .back-menu-list-groups
         display flex
@@ -654,7 +654,7 @@ if hexo-config('nav.group')
 
         +maxWidth768()
           padding-bottom 8px
-          box-shadow var(--efu-shadow-border)
+          box-shadow var(--sb-shadow-border)
           left: 0
 
     .back-menu-list-group
@@ -667,7 +667,7 @@ if hexo-config('nav.group')
 
       &:hover
         .back-menu-list-title
-          color var(--efu-lighttext)
+          color var(--sb-lighttext)
 
     .back-menu-list-groups
       position absolute
@@ -675,13 +675,13 @@ if hexo-config('nav.group')
       transform scale(.8)
       transform-origin top left
       left 1.5rem
-      background-color var(--efu-maskbgdeep)
+      background-color var(--sb-maskbgdeep)
       border-radius 12px
       border var(--style-border)
       flex-direction column
       font-size 12px
-      color var(--efu-secondtext)
-      box-shadow var(--efu-shadow-border)
+      color var(--sb-secondtext)
+      box-shadow var(--sb-shadow-border)
       transition .3s
       opacity 0
       pointer-events none
@@ -701,45 +701,45 @@ if hexo-config('nav.group')
 .nav-fixed
   #nav
     a
-      color var(--efu-fontcolor)
+      color var(--sb-fontcolor)
       transition .3s
 
       &:hover
-        background var(--efu-lighttext)
-        color var(--efu-card-bg)
+        background var(--sb-lighttext)
+        color var(--sb-card-bg)
         transition .3s
 
     #site-name
       &:hover
         +minWidth900()
-          background var(--efu-lighttext)
+          background var(--sb-lighttext)
 
     if hexo-config('nav.group')
       .back-home-button
-        color var(--efu-fontcolor)
+        color var(--sb-fontcolor)
 
         &:hover
-          background var(--efu-lighttext)
-          color var(--efu-card-bg)
+          background var(--sb-lighttext)
+          color var(--sb-card-bg)
 
     .menus_item
       &:hover
         & >
         a.site-page
-          background-color var(--efu-lighttext)
+          background-color var(--sb-lighttext)
 
           +minWidth768()
-            background-color var(--efu-main)
+            background-color var(--sb-main)
 
 .post
   .post-bg
     if hexo-config('nav.group')
       .back-home-button
-        color var(--efu-white)
+        color var(--sb-white)
 
         &:hover
-          background var(--efu-white-op)
-          color var(--efu-white)
+          background var(--sb-white-op)
+          color var(--sb-white)
           cursor pointer
 
   #nav
@@ -749,20 +749,20 @@ if hexo-config('nav.group')
           align-items center
 
       i.fas.fa-home
-        color var(--efu-white)
+        color var(--sb-white)
 
   .nav-fixed
     #nav
       #site-name
         i.fas.fa-home
-          color var(--efu-card-bg)
+          color var(--sb-card-bg)
 
   .not-top-img
     #nav
       a
         &:hover
           +minWidth900()
-            background var(--efu-lighttext)
+            background var(--sb-lighttext)
 
 .back-menu-list
   display flex
@@ -790,25 +790,25 @@ if hexo-config('nav.group')
 
   #nav &
     &:hover
-      background var(--efu-lighttext)
+      background var(--sb-lighttext)
 
   &:hover
-    background var(--efu-lighttext)
+    background var(--sb-lighttext)
 
     .back-menu-item-text
-      color var(--efu-card-bg)
+      color var(--sb-card-bg)
 
   .back-menu-item-icon
     width 24px
     height 24px
     border-radius 8px
-    background var(--efu-none)
+    background var(--sb-none)
 
   .back-menu-item-text
     font-size 16px
     transition .3s
     margin-left .5rem
-    color var(--efu-fontcolor)
+    color var(--sb-fontcolor)
 
     +maxWidth768()
       font-size 14px
@@ -817,34 +817,34 @@ if hexo-config('nav.group')
   #nav
     a
       &:hover
-        color var(--efu-card-bg)
-        background var(--efu-main)
+        color var(--sb-card-bg)
+        background var(--sb-main)
         transition .3s
-        box-shadow var(--efu-shadow-main)
+        box-shadow var(--sb-shadow-main)
 
     #site-name
       &:hover
         i
-          color var(--efu-card-bg)
+          color var(--sb-card-bg)
 
   .menus_item
     &:hover
       & > a.site-page
         +minWidth768()
-          color var(--efu-card-bg) !important
-          background var(--efu-main)
-          box-shadow var(--efu-shadow-main)
+          color var(--sb-card-bg) !important
+          background var(--sb-main)
+          box-shadow var(--sb-shadow-main)
 
 .error
   #nav
     a
       &:hover
-        background var(--efu-main)
+        background var(--sb-main)
 
     #site-name
       i
         +maxWidth768()
-          color var(--efu-fontcolor)
+          color var(--sb-fontcolor)
 
 #menus
   & > div

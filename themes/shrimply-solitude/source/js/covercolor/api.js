@@ -38,7 +38,7 @@ function handleApiColor(path, music = false) {
 function setMusicColor(value) {
     if (!value) return setDefaultThemeColors();
     const item = document.querySelector("#nav-music")
-    item.style.setProperty('--efu-music', value);
+    item.style.setProperty('--sb-music', value);
 }
 
 function img2color(src, music = false) {
@@ -62,10 +62,10 @@ function img2color(src, music = false) {
 function setThemeColors(value) {
     if (value) {
         const [r, g, b] = value.match(/\w\w/g).map(x => parseInt(x, 16));
-        document.documentElement.style.setProperty('--efu-main', value);
-        document.documentElement.style.setProperty('--efu-main-op', `${value}23`);
-        document.documentElement.style.setProperty('--efu-main-op-deep', `${value}dd`);
-        document.documentElement.style.setProperty('--efu-main-none', `${value}00`);
+        document.documentElement.style.setProperty('--sb-main', value);
+        document.documentElement.style.setProperty('--sb-main-op', `${value}23`);
+        document.documentElement.style.setProperty('--sb-main-op-deep', `${value}dd`);
+        document.documentElement.style.setProperty('--sb-main-none', `${value}00`);
         adjustBrightness(r, g, b);
         document.getElementById("coverdiv").classList.add("loaded");
         initThemeColor();
@@ -75,10 +75,10 @@ function setThemeColors(value) {
 }
 
 function setDefaultThemeColors() {
-    document.documentElement.style.setProperty('--efu-main', 'var(--efu-theme)');
-    document.documentElement.style.setProperty('--efu-main-op', 'var(--efu-theme-op)');
-    document.documentElement.style.setProperty('--efu-main-op-deep', 'var(--efu-theme-op-deep)');
-    document.documentElement.style.setProperty('--efu-main-none', 'var(--efu-theme-none)');
+    document.documentElement.style.setProperty('--sb-main', 'var(--sb-theme)');
+    document.documentElement.style.setProperty('--sb-main-op', 'var(--sb-theme-op)');
+    document.documentElement.style.setProperty('--sb-main-op-deep', 'var(--sb-theme-op-deep)');
+    document.documentElement.style.setProperty('--sb-main-none', 'var(--sb-theme-none)');
     initThemeColor();
 }
 
@@ -93,11 +93,11 @@ function adjustBrightness(r, g, b) {
     const brightness = Math.round(((r * 299) + (g * 587) + (b * 114)) / 1000);
     if (brightness < 125) {
         [...document.getElementsByClassName('card-content')].forEach(item => {
-            item.style.setProperty('--efu-card-bg', 'var(--efu-white)');
+            item.style.setProperty('--sb-card-bg', 'var(--sb-white)');
         });
         [...document.getElementsByClassName('sayhi')].forEach(item => {
-            item.style.setProperty('background', 'var(--efu-white-op)');
-            item.style.setProperty('color', 'var(--efu-white)');
+            item.style.setProperty('background', 'var(--sb-white-op)');
+            item.style.setProperty('color', 'var(--sb-white)');
         });
     }
 }

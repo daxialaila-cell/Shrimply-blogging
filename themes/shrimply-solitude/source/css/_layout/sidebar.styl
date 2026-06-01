@@ -1,5 +1,5 @@
 #sidebar
-  background var(--efu-maskbg)
+  background var(--sb-maskbg)
 
   #menu-mask
     position fixed
@@ -7,7 +7,7 @@
     display none
     width 100%
     height 100%
-    background var(--efu-maskbg)
+    background var(--sb-maskbg)
     -webkit-backdrop-filter saturate(180%) blur(20px)
     backdrop-filter saturate(180%) blur(20px)
     transform translateZ(0)
@@ -20,7 +20,7 @@
     overflow hidden auto
     width 300px
     height 100%
-    background var(--efu-maskbgdeep)
+    background var(--sb-maskbgdeep)
     transition all .5s ease 0s
     z-index 1001
     border-left var(--style-border-always)
@@ -33,7 +33,7 @@
         width calc(50% - 16px)
 
         &:hover
-          background var(--efu-lighttext)
+          background var(--sb-lighttext)
 
       .menus_items
         li
@@ -41,11 +41,11 @@
             font-weight 400
 
           .site-page:hover
-            background var(--efu-main) !important
-            color var(--efu-white)
+            background var(--sb-main) !important
+            color var(--sb-white)
 
           .site-page span:hover
-            color var(--efu-white)
+            color var(--sb-white)
 
     / .site-data
       display flex
@@ -65,14 +65,14 @@
           align-items flex-start
 
         .data-item-link .length-num
-          color var(--efu-fontcolor)
+          color var(--sb-fontcolor)
           font-size 20px
           font-weight 700
           line-height 1
 
         .data-item-link .headline
           font-size 12px
-          color var(--efu-secondtext)
+          color var(--sb-secondtext)
 
     .menus_items
       padding 0 16px
@@ -81,7 +81,7 @@
         position relative
         display block
         padding 0
-        color var(--efu-fontcolor)
+        color var(--sb-fontcolor)
         cursor pointer
         font-size 14px
         font-weight 700
@@ -89,7 +89,7 @@
       .menus_item > .site-page
         display flex
         font-size 12px
-        color var(--efu-secondtext)
+        color var(--sb-secondtext)
 
       .expand
         position absolute
@@ -114,7 +114,7 @@
           padding 8px
           border-radius 8px
           border var(--style-border-always)
-          background var(--efu-card-bg)
+          background var(--sb-card-bg)
 
         li
           width calc(50% - 8px)
@@ -135,7 +135,7 @@
 
       .back-menu-list-title
         font-size 12px
-        color var(--efu-secondtext)
+        color var(--sb-secondtext)
 
       .back-menu-list
         width calc(100% + 16px)
@@ -143,7 +143,7 @@
         margin 0 -8px
 
         .back-menu-item
-          background var(--efu-card-bg)
+          background var(--sb-card-bg)
           border var(--style-border-always)
           border-radius 8px
 
@@ -175,16 +175,16 @@
       flex-wrap wrap
 
       a
-        color var(--efu-fontcolor)
+        color var(--sb-fontcolor)
         padding 2px 8px 2px 12px
         border-radius 8px
         border var(--style-border-always)
-        background var(--efu-card-bg)
+        background var(--sb-card-bg)
         font-size 14px !important
 
         &:hover
-          background var(--efu-main)
-          color var(--efu-white)
+          background var(--sb-main)
+          color var(--sb-white)
 
         sup
           opacity .6
@@ -192,7 +192,7 @@
 
     span.sidebar-menu-item-title
       font-size 12px
-      color var(--efu-secondtext)
+      color var(--sb-secondtext)
       margin-left 16px
 
     .sidebar-menu-item
@@ -207,16 +207,16 @@
         transition all .5s ease 0s
 
         &:hover
-          background var(--efu-main)
-          color var(--efu-white)
+          background var(--sb-main)
+          color var(--sb-white)
 
         [data-theme="dark"] &
-          background var(--efu-orange)
-          color var(--efu-white)
+          background var(--sb-orange)
+          color var(--sb-white)
 
       span.menu-child
         width 100%
-        background var(--efu-card-bg)
+        background var(--sb-card-bg)
         border-radius 8px
         border var(--style-border-always)
         display flex
@@ -243,7 +243,7 @@
         justify-content space-between
 
     .menus_items .site-page span:hover
-      color var(--efu-fontcolor)
+      color var(--sb-fontcolor)
 
   #toggle-sidebar
     bottom 80px

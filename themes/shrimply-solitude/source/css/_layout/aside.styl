@@ -29,8 +29,8 @@
     border-radius var(--radius)
     transition all .3s
     overflow hidden
-    background var(--efu-card-bg)
-    box-shadow var(--efu-shadow-black)
+    background var(--sb-card-bg)
+    box-shadow var(--sb-shadow-black)
     border var(--style-border)
     user-select none
 
@@ -59,7 +59,7 @@
 .card-info
   position relative
   &::before
-    background linear-gradient(-25deg, var(--efu-main), var(--efu-main-op-deep))
+    background linear-gradient(-25deg, var(--sb-main), var(--sb-main-op-deep))
     position absolute
     width 100%
     height 100%
@@ -77,26 +77,26 @@
   .sayhi
     width fit-content
     font-size 12px
-    background var(--efu-white-op)
+    background var(--sb-white-op)
     border-radius var(--radius)
     cursor pointer
     min-width 100px
     padding 2px 10px
-    color var(--efu-white)
+    color var(--sb-white)
     transition all .3s
 
     [data-theme='dark'] &
-        background var(--efu-black)
+        background var(--sb-black)
 
     &:hover
-      background var(--efu-white)
-      color var(--efu-main)
+      background var(--sb-white)
+      color var(--sb-main)
       transform scale(1.1)
       transition all .3s
 
       [data-theme='dark'] &
-        background var(--efu-black)
-        color var(--efu-white)
+        background var(--sb-black)
+        color var(--sb-white)
       
   .avatar
     width 118px
@@ -113,7 +113,7 @@
       border-radius 50%
       width 100%
       height 100%
-      border 5px solid var(--efu-card-bg)
+      border 5px solid var(--sb-card-bg)
       overflow hidden
 
     .sticker
@@ -128,14 +128,14 @@
       align-items center
       justify-content center
       transition .3s ease-out .2s
-      background var(--efu-white)
+      background var(--sb-white)
       border-radius 50%
   
   .description
     width 100%
     opacity 0
     transition .3s
-    color var(--efu-card-bg)
+    color var(--sb-card-bg)
     display flex
     flex-direction column
     line-height 1.5
@@ -155,14 +155,14 @@
 
       .name
         font-weight 700
-        color var(--efu-card-bg)
+        color var(--sb-card-bg)
         font-size 20px
         line-height 1
         margin-bottom 5px
 
       .desc
         font-size 12px
-        color var(--efu-card-bg)
+        color var(--sb-card-bg)
         opacity .6
         line-height 1
     
@@ -173,7 +173,7 @@
       gap 5px
 
       .social-icon
-        color var(--efu-fontcolor)
+        color var(--sb-fontcolor)
         cursor pointer
         display flex
         transition all .3s
@@ -181,12 +181,12 @@
         &:hover
           transform scale(1.1)
           i
-            color var(--efu-main)
-            background var(--efu-white)
+            color var(--sb-main)
+            background var(--sb-white)
 
         i
-          background var(--efu-white-op)
-          color var(--efu-white)
+          background var(--sb-white-op)
+          color var(--sb-white)
           font-size 1rem
           width 40px
           height 40px
@@ -198,8 +198,8 @@
           border-radius 32px
 
           [data-theme='dark'] &
-            background var(--efu-black)
-            color var(--efu-white)
+            background var(--sb-black)
+            color var(--sb-white)
 
 .card-webinfo
   padding .5rem 1rem
@@ -235,20 +235,20 @@
       left 0
       right 0
       height 150px
-      background-image linear-gradient(to top, var(--efu-card-bg), transparent)
+      background-image linear-gradient(to top, var(--sb-card-bg), transparent)
       pointer-events none
 
   a
-    color var(--efu-fontcolor)
+    color var(--sb-fontcolor)
     padding 0 .3rem
     font-size .8rem
     border-radius 8px
     transition .3s
 
     &:hover
-      background var(--efu-lighttext)
-      color var(--efu-card-bg)
-      box-shadow var(--efu-shadow-theme)
+      background var(--sb-lighttext)
+      color var(--sb-card-bg)
+      box-shadow var(--sb-shadow-theme)
 
     sup
       opacity .6
@@ -319,19 +319,19 @@
         transition all .2s
         line-height 24px
         padding 8px
-        color var(--efu-secondtext)
+        color var(--sb-secondtext)
         min-height 40px
         display flex
         align-items center
 
         &.active
-          background-color var(--efu-card-bg)
-          color var(--efu-lighttext)
+          background-color var(--sb-card-bg)
+          color var(--sb-lighttext)
           font-weight 700
           font-size 20px
 
         &:hover
-          background-color var(--efu-main-op-light)
+          background-color var(--sb-main-op-light)
 
         &:not(.active) span
           opacity .6
@@ -361,12 +361,12 @@
       align-items flex-start
 
       &:hover
-        background var(--efu-main)
-        color var(--efu-white)
-        box-shadow var(--efu-shadow-main)
+        background var(--sb-main)
+        color var(--sb-white)
+        box-shadow var(--sb-shadow-main)
 
         .content a
-          color var(--efu-white)
+          color var(--sb-white)
 
       .thumbnail
         border-radius 8px
@@ -415,7 +415,7 @@ if hexo-config('comment.newest_comment.enable')
       margin-right .5rem
 
       &:hover
-        color var(--efu-lighttext)
+        color var(--sb-lighttext)
         transition .3s
       .thumbnail
         border-radius 8px
@@ -471,7 +471,7 @@ if hexo-config('comment.newest_comment.enable')
           cursor pointer
 
           &:hover
-            color var(--efu-lighttext)
+            color var(--sb-lighttext)
             transition .3s
           font-weight 700
           margin 4px 0
@@ -484,15 +484,15 @@ if hexo-config('comment.newest_comment.enable')
         .datetime
         .categories
           font-size 12px
-          color var(--efu-secondtext)
+          color var(--sb-secondtext)
           margin-top auto
 
 #more-tags-btn
   transition .3s
   width 100%
   text-align center
-  background var(--efu-secondbg)
-  color var(--efu-fontcolor)
+  background var(--sb-secondbg)
+  color var(--sb-fontcolor)
   border-radius 8px
   display flex
   justify-content center
@@ -503,4 +503,4 @@ if hexo-config('comment.newest_comment.enable')
   cursor pointer
 
   &:hover
-    background var(--efu-main)
+    background var(--sb-main)

@@ -24,21 +24,21 @@
     max-height 150px
     margin 4px
     padding 8px 14px
-    background var(--efu-maskbgdeep)
+    background var(--sb-maskbgdeep)
     border-radius 8px
-    color var(--efu-fontcolor)
+    color var(--sb-fontcolor)
     animation 0.6s cubic-bezier(0.42, 0, 0.3, 1.11) 0s 1 normal none running barrageIn;
     transition all 0.3s ease 0s
     display: flex
     flex-direction column
     border var(--style-border)
     backdrop-filter saturate(180%) blur(20px)
-    box-shadow var(--efu-shadow-border)
+    box-shadow var(--sb-shadow-border)
     overflow hidden
 
     &:hover
       border var(--style-border-hover)
-      box-shadow var(--efu-shadow-main)
+      box-shadow var(--sb-shadow-main)
 
     &.out
       opacity 0
@@ -48,16 +48,16 @@
       opacity 0
 
     .comment-barrage-close
-      color var(--efu-secondtext)
+      color var(--sb-secondtext)
       cursor pointer
       line-height 1
       margin 4px
 
       &:hover
-        color var(--efu-main)
+        color var(--sb-main)
 
-      .Shrimply
-        color var(--efu-fontcolor)
+      .sb
+        color var(--sb-fontcolor)
         font-size 18px
 
     .barrageHead
@@ -72,24 +72,24 @@
       font-weight 700
 
       .barrageTitle
-        color var(--efu-card-bg)
+        color var(--sb-card-bg)
         margin-right 8px
-        background var(--efu-fontcolor)
+        background var(--sb-fontcolor)
         line-height 1
         padding 4px
         border-radius 4px
         white-space nowrap
 
         &:hover
-          background var(--efu-main)
-          color var(--efu-white)
+          background var(--sb-main)
+          color var(--sb-white)
 
     .barrageAvatar
       width 16px
       height 16px
       margin 0 8px 0 auto
       border-radius 50%
-      background var(--efu-secondbg)
+      background var(--sb-secondbg)
 
     .barrageContent
       height calc(100% - 30px)

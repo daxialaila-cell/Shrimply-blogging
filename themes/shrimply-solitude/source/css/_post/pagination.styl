@@ -31,25 +31,25 @@
   +maxWidth768()
     border-radius 12px
     border var(--style-border-always)
-    box-shadow var(--efu-shadow-border)
+    box-shadow var(--sb-shadow-border)
 
   &.pagination-post
     margin 0 2rem 1rem
-    background var(--efu-card-bg)
+    background var(--sb-card-bg)
 
     +minWidth768()
       border-radius 12px
 
   .next-post, .prev-post, .next-post.pull-right, .prev-post.pull-left
-    background var(--efu-secondbg)
+    background var(--sb-secondbg)
 
     +minWidth1300()
-      background var(--efu-maskbgdeep)
+      background var(--sb-maskbgdeep)
       backdrop-filter blur(5px)
       transform translateZ(0)
 
     +maxWidth768()
-      background var(--efu-card-bg)
+      background var(--sb-card-bg)
 
   .next-post.pull-full, .prev-post.pull-full
     +minWidth1300()
@@ -77,12 +77,12 @@
       width 100%
 
     .label
-      color var(--efu-fontcolor)
+      color var(--sb-fontcolor)
       text-transform uppercase
       font-size 90%
 
       +minWidth1300()
-        color var(--efu-fontcolor)
+        color var(--sb-fontcolor)
         font-weight 700
         font-size 12px
         margin-bottom 0.5rem
@@ -101,14 +101,14 @@
 
       +minWidth768()
         &:hover
-          background var(--efu-main)
+          background var(--sb-main)
 
           div
-            color: var(--efu-white)
+            color: var(--sb-white)
 
       +maxWidth768()
         &:hover
-          background var(--efu-none)
+          background var(--sb-none)
 
   .prev-post
     .pagination-info
@@ -116,7 +116,7 @@
 
     a
       +minWidth768()
-        border-right var(--efu-main-op)
+        border-right var(--sb-main-op)
         border-right-width .5px
         border-right-style solid
 
@@ -134,7 +134,7 @@
 
     a
       +minWidth768()
-        border-left var(--efu-main-op)
+        border-left var(--sb-main-op)
         border-left-width .5px
         border-left-style solid
         display flex
@@ -169,7 +169,7 @@
       transform none
 
   .next_info, .prev_info
-    color var(--efu-fontcolor)
+    color var(--sb-fontcolor)
     font-weight 700
     -webkit-line-clamp 2
     white-space normal

@@ -13,9 +13,9 @@
     margin 0 0 1rem
 
   a
-    color var(--efu-fontcolor)
+    color var(--sb-fontcolor)
     border-radius 4px 4px 0 0
-    border-bottom 2px dotted var(--efu-lighttext)
+    border-bottom 2px dotted var(--sb-lighttext)
     font-weight 700
 
     &.fancybox
@@ -47,8 +47,8 @@
     &:hover
       border-bottom none
       box-shadow none
-      background var(--efu-none)
-      color var(--efu-lighttext)
+      background var(--sb-none)
+      color var(--sb-lighttext)
       opacity 1
 
   p
@@ -63,10 +63,10 @@
       &:not(.fancybox)
         text-decoration none
         border none
-        color var(--efu-theme)
+        color var(--sb-theme)
         font-weight 700
         padding 0 4px
-        background linear-gradient(to top, var(--efu-theme-op), var(--efu-theme-op)) no-repeat bottom / 100% .1em
+        background linear-gradient(to top, var(--sb-theme-op), var(--sb-theme-op)) no-repeat bottom / 100% .1em
         transition all .2s
 
         &:hover
@@ -80,13 +80,13 @@
       font-size 15px
 
   code:not([class*='language-'])
-    color var(--efu-fontcolor)
+    color var(--sb-fontcolor)
     padding .4em
     border-radius 4px
     font-size 12px
-    background var(--efu-card-bg)
+    background var(--sb-card-bg)
     line-height 1.5
-    box-shadow var(--efu-shadow-border)
+    box-shadow var(--sb-shadow-border)
     border var(--style-border)
 
   img:not(.post_bg)
@@ -108,9 +108,9 @@
         position absolute
         top 0
         left 0
-        color var(--efu-fontcolor)
+        color var(--sb-fontcolor)
         transition all .3s ease-out 0s
-        background var(--efu-lighttext)
+        background var(--sb-lighttext)
 
       &:not(.tab)
         position relative
@@ -130,7 +130,7 @@
           height .42em
           border-radius .42em
           background 0 0
-          border .21em solid var(--efu-lighttext)
+          border .21em solid var(--sb-lighttext)
           content ""
           line-height .42em
 
@@ -142,7 +142,7 @@
       border-radius .725em
       text-align center
       font-size .85em
-      color var(--efu-white)
+      color var(--sb-white)
       line-height 1.45em
 
     ul li
@@ -185,7 +185,7 @@
     h2
       font-size 1.3rem
       line-height 1.3
-      border-top 1px dashed var(--efu-theme-op)
+      border-top 1px dashed var(--sb-theme-op)
       padding-top 1rem
 
     h3, h4
@@ -196,7 +196,7 @@
     position relative
     margin 0.5rem 0
     border-width 0
-    border-top 1px dashed var(--efu-theme-op)
+    border-top 1px dashed var(--sb-theme-op)
 
 if hexo-config('mediumZoom')
   .medium-zoom--opened .medium-zoom-overlay
