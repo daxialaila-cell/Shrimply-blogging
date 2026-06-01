@@ -1,0 +1,11 @@
+<% if (theme.changyan.appid) { %>
+  <div id="SOHUCS" sid='<%= page.permalink %>'></div>
+  <script type="text/javascript">
+    Shrimply.utils.loadComments('#SOHUCS', function() {
+      Shrimply.utils.createScript("https://changyan.sohu.com/upload/changyan.js", function() {
+        window.changyan.api.config(<%- JSON.stringify(theme.changyan || {}) %>)
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+<% } %>

@@ -1,6 +1,10 @@
 #---------------------------
-# Fluid 主题配置 - Mac 极简风格
+# Shrimply 主题配置 - Mac 极简风格
 #---------------------------
+
+# 图标
+favicon: /img/shrimply.png
+apple_touch_icon: /img/shrimply.png
 
 # 导航栏
 navbar:
